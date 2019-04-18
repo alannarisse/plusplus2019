@@ -1,0 +1,6 @@
+name: plusplusco
+recipe: pantheon
+config:
+  framework: wordpress
+  site: plusplusco
+  id: a684a331-da0d-4b01-8fa4-cc02eeda8ce2
