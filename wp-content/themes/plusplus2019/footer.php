@@ -4,7 +4,7 @@
 		<p class="micro">&copy; 2018 PlusPlus, Inc. </p>
 		<ul>
 			<li><a href="/docs">Documentation</a></li>
-			<li><a href="/category/ideas">IDEAS Magazine</a></li>
+			<li><a href="/ideas">IDEAS Magazine</a></li>
 			<li><a href="#">TechKnowCon</a></li>
 			<li><a href="#">Events</a></li>
 		</ul>
