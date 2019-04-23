@@ -11,7 +11,7 @@
 		<ul>
 			<li><a href="#">Contact Us</a></li>
 			<li><a href="#">YouTube</a></li>
-			<li><a href="#">Twitter</a></li>
+			<li><a href="https://twitter.com/PlusPlusHQ" target="_blank">Twitter</a></li>
 			<li><a href="#">LinkedIn</a></li>
 		</ul>
 	</footer>

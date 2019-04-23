@@ -558,6 +558,12 @@ footer a {
 footer a:hover {
   color: #05605D;
 }
+footer ul {
+  margin: 0;
+}
+footer li {
+  margin: 0 0 0.4em 0;
+}
 
 .micro {
   font-size: 0.8em;
@@ -675,17 +681,14 @@ article h1 {
   font-size: 2em;
   line-height: 1.4em;
 }
-
 article h2 {
   font-size: 1.5em;
   line-height: 1.4em;
 }
-
 article img {
   width: 100%;
   height: auto !important;
 }
-
 article div {
   width: 100% !important;
 }
@@ -695,42 +698,16 @@ article div {
   height: auto;
 }
 
-body.blog section {
+body.blog section, body.archive section {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 4em;
 }
 
-body.blog section:nth-child(2) {
+body.blog section:nth-child(2), body.archive section:nth-child(2) {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 4em;
-}
-
-body.archive section {
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 2em;
-}
-
-body.blog section:nth-child(2) {
   margin-left: 40px;
   padding: 0 60px;
-}
-
-body.blog section:nth-child(2) div {
-  position: relative;
-}
-
-body.blog section:nth-child(2) div .feature2 {
-  position: absolute;
-  top: 20%;
-  left: 80%;
-  z-index: -1;
-  width: 470px;
-}
-
-body.blog section.blog-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 4em;
 }
 
 body.blog h1, body.archive h1 {
@@ -748,10 +725,34 @@ body.demo section:nth-child(2) {
 }
 
 /* //IDEAS */
+/* Support & Services */
 .page-id-895 {
   background-color: #FFB500;
 }
+.page-id-895 button:hover, .page-id-895 .button:hover, .page-id-895 .button a:hover {
+  background-color: #BD84CC;
+  /* teal */
+}
+.page-id-895 button, .page-id-895 .button {
+  background-color: #1BBA8A;
+}
 
+/* Docs */
+.post-type-archive-docs {
+  background-color: #034747;
+  color: #fff;
+}
+.post-type-archive-docs nav a, .post-type-archive-docs footer, .post-type-archive-docs footer a {
+  color: #fff;
+}
+.post-type-archive-docs nav a:hover, .post-type-archive-docs footer a:hover {
+  color: #BD84CC;
+}
+.post-type-archive-docs h3 {
+  font-weight: 600;
+}
+
+/* Product */
 .page-id-425 {
   background-color: #75223D;
   color: #8EEDCD;
@@ -780,7 +781,7 @@ MEDIA QUERIES
     grid-column-gap: 4em;
   }
 
-  body.blog section {
+  body.blog section, body.archive section {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -797,11 +798,11 @@ MEDIA QUERIES
     font-size: 6.5em;
   }
 
-  body.blog section {
+  body.blog section, body.archive section {
     display: block;
   }
 
-  body.blog section:nth-child(2) {
+  body.blog section:nth-child(2), body.archive section:nth-child(2) {
     margin-left: 0;
     padding: 0 40px;
   }
