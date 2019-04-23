@@ -676,10 +676,16 @@ article div {
   height: auto;
 }
 
-/*body.blog section {
-	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 4em;
-}*/
+body.blog section {
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4em;
+}
+
+body.blog section:nth-child(1) {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 4em;
+}
+
 body.archive section {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2em;
