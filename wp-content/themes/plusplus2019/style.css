@@ -586,6 +586,25 @@ footer a:hover {
   margin-left: -80px;
 }
 
+.top-horiz {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 60px 0 40px 100px;
+}
+.top-horiz svg {
+  max-width: 700px;
+  justify-self: right;
+}
+
+.mid-horiz {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.mid-horiz svg {
+  max-width: 900px;
+}
+
 /* COLOR STYLES BY PAGE */
 body.home nav a {
   color: #BD84CC;
@@ -681,7 +700,7 @@ body.blog section {
   grid-column-gap: 4em;
 }
 
-body.blog section:nth-child(1) {
+body.blog section:nth-child(2) {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 4em;
 }
@@ -756,14 +775,47 @@ MEDIA QUERIES
     grid-column-gap: 8em;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
   section {
     grid-column-gap: 4em;
+  }
+
+  body.blog section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top-horiz {
+    display: block;
+  }
+  .top-horiz svg {
+    max-width: 400px;
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
   body.home h1 {
     font-size: 6.5em;
+  }
+
+  body.blog section {
+    display: block;
+  }
+
+  body.blog section:nth-child(2) {
+    margin-left: 0;
+    padding: 0 40px;
+  }
+
+  .top-horiz {
+    margin-left: 0;
+  }
+
+  .top-horiz h3 {
+    margin-left: 40px;
+  }
+
+  .top-horiz svg {
+    margin-left: 0;
   }
 
   h2 {

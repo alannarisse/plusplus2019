@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 	<main>
+		<div class="top-horiz">
+			<h3>Featured Articles</h3>
+			<?php get_template_part('images/inline', 'bkg_horiz.svg'); ?>
+		</div>
 		<section>
 <!-- 			is_tag( 'featured' );
  -->
@@ -18,6 +22,7 @@
 			<?php endwhile; ?>
 		<?php endif; ?>
 		</section>
+		<div class="mid-horiz"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?></div>
 		<section>
 			<?php
 				$query = new WP_Query( array( 'post__not_in' => get_option( 'sticky_posts' ) ) ); ?>
@@ -30,15 +35,7 @@
 			<?php echo wpautop('Sorry, no posts were found'); ?>
 			<?php endif; ?>
 		</section>
-		<section>
-			
-			<div style="height:120px;">&nbsp;</div>
-			<div style="width: 246px">
-				<?php get_template_part('images/inline', 'bhoriz_single_pluses.svg'); ?></div>
-			<div style="margin-left: -120px;"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?></div>
 
-
-		</section>
 
 
 
