@@ -96,20 +96,22 @@ else:
      *
      * If you are only running on Pantheon, you can ignore this block.
      */
-    define('DB_NAME',          'database_name');
-    define('DB_USER',          'database_username');
-    define('DB_PASSWORD',      'database_password');
-    define('DB_HOST',          'database_host');
+    define('DB_NAME',          'plusplus');
+    define('DB_USER',          'plusplus');
+    define('DB_PASSWORD',      'plusplus');
+    define('DB_HOST',          '127.0.0.1');
     define('DB_CHARSET',       'utf8');
     define('DB_COLLATE',       '');
-    define('AUTH_KEY',         'put your unique phrase here');
-    define('SECURE_AUTH_KEY',  'put your unique phrase here');
-    define('LOGGED_IN_KEY',    'put your unique phrase here');
-    define('NONCE_KEY',        'put your unique phrase here');
-    define('AUTH_SALT',        'put your unique phrase here');
-    define('SECURE_AUTH_SALT', 'put your unique phrase here');
-    define('LOGGED_IN_SALT',   'put your unique phrase here');
-    define('NONCE_SALT',       'put your unique phrase here');
+    define( 'WP_HOME', 'http://plusplus.com.test' );
+    define( 'WP_SITEURL', 'http://plusplus.com.test' );
+    define('AUTH_KEY',         'sb2|;5-TW kY.W&w#o4@nEIcknZvR-LZo64}{of6(M3Q0M3QHh%#X*ly @.q*vC0');
+define('SECURE_AUTH_KEY',  '7O:kN. 9U#!=dJd]`y`#?1B);Z2H{t]RW3z@2Y>s*WJ?A5uo)iQY`YeMRpwd,y@X');
+define('LOGGED_IN_KEY',    'lfYIoD#1Si>QW4:cfMez^mnFi+_a~!L.#,x3;tGlR56TiDJu.&-h^0b;G6eBQJSV');
+define('NONCE_KEY',        'u-s-qX}2zX.Z(7,JKaSwFg 3i_NIj3Z7/ogV)aUj,<@&;K^+$^ph^@j=NgSChKI ');
+define('AUTH_SALT',        '.X2Gz6Oi/#[dnY:ew54YvYm(LzZt{<UL$XV-HC=OIfl`XArX|A?>@;jY3`D`qS-b');
+define('SECURE_AUTH_SALT', '2I-JM@+==>*W^bmaQ+T-h-dRfVufM2*Q*{p,l~<:Ope;M>]gtjc:]-+-8}>>1=.k');
+define('LOGGED_IN_SALT',   'j`[NC/bj4L6ihGxo5R C(K  -2zX/HqrTL48VF3T|/A|O(:wi,D(aV`e{9BY<>X`');
+define('NONCE_SALT',       '3Z]vdf}>.d;lkO/M]+/2,qh o8i8x_;qRvrZ5Fv}d)j+rc% iyL+SV8Gn(L}Iw!{');
   endif;
 endif;
 

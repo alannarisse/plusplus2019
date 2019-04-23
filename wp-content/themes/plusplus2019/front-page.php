@@ -12,15 +12,15 @@
 			<li>Extend learning and development opportunities with organization-wide access to face-to-face, peer-to-peer, live learning and development opportunities.</li>
 			<li>Keep new hires and long-term employees engaged today and primed for tomorrow's challenges through a culture of continuous learning.</li>
 		</ul>
+
 		<p><button class="button">Schedule a Demo</button></p>
 		</div>
 		<div><?php get_template_part('images/inline', 'bkg_pluses_lg.svg'); ?></div>
 		</section>
 
-
-<?php if( have_rows('homepage_sections')): ?>
+	<?php if( have_rows('homepage_sections')): ?>
 	<section>
-<?php while( have_rows('homepage_sections')): the_row(); ?>
+	<?php while( have_rows('homepage_sections')): the_row(); ?>
 
 		<div>
 			<h2><?php the_sub_field('header'); ?>

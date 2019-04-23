@@ -11,7 +11,6 @@ function plusplus_theme_support(){
 
 add_action('after_setup_theme', 'plusplus_theme_support');
 
-
 // Excerpt Length
 function plusplus_excerpt_length(){
 	return 55;

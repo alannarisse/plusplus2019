@@ -508,11 +508,11 @@ ul {
   padding: 0;
 }
 
-section li {
+.plus li {
   margin: 0 0 2em 1.4em;
   color: #fff;
 }
-section li :before {
+.plus li :before {
   content: "+";
   /* content: url('assets/bullet_plus_three.svg');*/
   margin-right: 10px;
@@ -615,7 +615,7 @@ body.home section:nth-child(3) {
 }
 
 body.home section:nth-child(2) div:nth-last-child(2) {
-  background-image: url("images/bkg_table_maroon.svg");
+  background-image: url("images/bkg_table_maroon.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom left;
@@ -666,11 +666,10 @@ article div {
   height: auto;
 }
 
-body.blog section {
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 4em;
-}
-
+/*body.blog section {
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 4em;
+}*/
 body.archive section {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2em;
