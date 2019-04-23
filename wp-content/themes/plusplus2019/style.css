@@ -576,6 +576,16 @@ footer a:hover {
   margin-top: -90px;
 }
 
+.tri-right img {
+  float: right;
+  height: 800px;
+  margin-right: -80px;
+}
+
+.horiz-left img {
+  margin-left: -80px;
+}
+
 /* COLOR STYLES BY PAGE */
 body.home nav a {
   color: #BD84CC;
