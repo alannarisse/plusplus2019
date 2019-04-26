@@ -463,7 +463,7 @@ h3 {
 
 h4 {
   font-size: 1.5em;
-  line-height: 1.2em;
+  line-height: 1.4em;
   font-weight: 300;
   margin-bottom: 0.5em;
 }
@@ -546,6 +546,24 @@ button:hover, .button:hover, .button a:hover {
 }
 
 /* //BUTTONS */
+img.round {
+  border-radius: 50%;
+  width: 250px;
+  z-index: -1;
+  text-align: center;
+}
+
+.round-bdr {
+  display: inline-block;
+  width: 265px;
+  height: 265px;
+  border: 2px solid #1BBA8A;
+  border-radius: 50%;
+  z-index: 99;
+  margin-bottom: 2em;
+  margin-left: 150px;
+}
+
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -700,7 +718,7 @@ article div {
 
 body.blog section, body.archive section {
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 4em;
+  grid-column-gap: 8em;
 }
 
 body.blog section:nth-child(2), body.archive section:nth-child(2) {
