@@ -610,6 +610,14 @@ footer li {
   margin-left: -80px;
 }
 
+.horiz-right {
+  margin: 4em -230px 4em 0;
+  align-content: end;
+}
+.horiz-right svg {
+  max-width: 80%;
+}
+
 .top-horiz {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -744,20 +752,20 @@ body.demo section:nth-child(2) {
 
 /* //IDEAS */
 /* Support & Services */
-.page-id-895 {
+.page-id-895, .page-template-page-docs-template {
   background-color: #FFB500;
 }
-.page-id-895 button:hover, .page-id-895 .button:hover, .page-id-895 .button a:hover {
+.page-id-895 button:hover, .page-id-895 .button:hover, .page-id-895 .button a:hover, .page-template-page-docs-template button:hover, .page-template-page-docs-template .button:hover, .page-template-page-docs-template .button a:hover {
   background-color: #BD84CC;
   /* teal */
 }
-.page-id-895 button, .page-id-895 .button {
+.page-id-895 button, .page-id-895 .button, .page-template-page-docs-template button, .page-template-page-docs-template .button {
   background-color: #1BBA8A;
 }
 
 /* Docs */
 .post-type-archive-docs {
-  background-color: #034747;
+  background-color: #FFB500;
   color: #fff;
 }
 .post-type-archive-docs nav a, .post-type-archive-docs footer, .post-type-archive-docs footer a {
@@ -771,11 +779,20 @@ body.demo section:nth-child(2) {
 }
 
 /* Product */
-.page-id-425 {
+.page-id-425, .page-template-page-product-template {
   background-color: #75223D;
   color: #8EEDCD;
 }
-.page-id-425 footer a, .page-id-425 nav a {
+.page-id-425 footer a, .page-id-425 nav a, .page-template-page-product-template footer a, .page-template-page-product-template nav a {
+  color: #8EEDCD;
+}
+
+/* About Page */
+.page-id-93 {
+  background-color: #034747;
+  color: #fff;
+}
+.page-id-93 footer a, .page-id-93 nav a {
   color: #8EEDCD;
 }
 

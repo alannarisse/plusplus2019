@@ -10,6 +10,8 @@
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<?php wp_head(); ?>
 </head>
+<?php global $template_var;
+echo $template_var; ?>
 <body <?php body_class(); ?> class="ideas">
 	<nav>
 		<a href="<?php echo home_url('/'); ?>" class="logo">

@@ -12,34 +12,41 @@
 		</div>
 
 
-		<div class="horiz-left" style="margin-bottom:4em;margin-left:-200px;"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?></div><div>&nbsp;</div>
+		<div class="horiz-left" style="margin-bottom:4em;margin-left:-200px;"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?>
+			<p>
+		</div><div>&nbsp;</div>
+
+		<div>
+			<h3>Platform</h3>
+			<h4>Enterprise Integration</h4>
+			<p>Make it fit like a glove within your ecosystem
+			It is important that this app appears like any other app within your enterprise ecosystem. That’s why we focus heavily on integration so it fits like a glove.</p>
+
+			<p>Whichever Single Sign-on (SSO) system you use, we got you. From Okta, OneLogin, Google, and LDAP to other OAuth2 and SAML solutions.</p>
+
+			<p>PlusPlus plays well with other apps, from Google Calendar to Workday and Slack.
+			</p>
+			
+		</div>
+
+
+		<div style="border-radius: 20px; background: #fff; padding:20px;">
+			<img src="/wp-content/uploads/2018/08/integrations.png" style="max-width:50%;margin:auto;">
+		</div>
+
+		<div>&nbsp;</div>
+		<div class="horiz-right"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?>
+		</div>
 
 		<div>
 			<img src="/wp-content/themes/plusplus2019/images/products/Coaching-index.png" style="width: 100%;">
 		</div>
 		<div>
-<h3>Coaching and Mentoring</h3>
-<p>Effective knowledge transfer at scale that’s as unique as your organization? Tailored to each employee’s needs? Yes!</p>
+			<h3>Coaching and Mentoring</h3>
+			<p>Effective knowledge transfer at scale that’s as unique as your organization? Tailored to each employee’s needs? Yes!</p>
 
-<p>With PlusPlus you can instill a culture of learning that puts your workforce first. Experts schedule time for onboarding and training. Those seeking new skills or advice connect to experts they need. Voila! The effectiveness of tribal knowledge transfer increased without an impact on productivity.</p>
-<!-- 
-No fruitless searching for the right knowledge.
-Only 38% of employees feel they have access to long-term development at work. With the PlusPlus Coaching and Mentoring module, employees control their own career development. Now everyone has unique learning paths. Choose coaching (program-first discovery), mentoring (people-first discovery), or instructor-led training (ILT).
-
-No need to know who to approach or when.
-6 out of 10 employees want to learn at the speed of need. The PlusPlus Coaching and Mentoring module makes this happen.
-
-Find-Top-Mentors-Available-Mentorship-Programs
-
-Experts are only a screen away. Newbies can find the available expert they need. PlusPlus handles the actual virtual introduction and all calendaring.
-
-Speed interactions by including coaching or mentoring in an onboarding track.
-
-A data-based discovery of your organization’s most effective Guides.
-80% of workforce learning happens through on-the-job interactions with peers, teammates, and managers. PlusPlus, unlike other offerings available, focuses on this 1:1 tribal knowledge transfer.
-
-The PlusPlus Coaching and Mentoring module highlights your best coaches and mentors. (Together coaches, mentors, trainers, and presenters are Guides.) Your workforce can now identify who to learn from. People teams know the most in-demand and most effective coaches and mentors. L&D can help overextended mentors create ILT to reach more people with less effort.
- -->
+			<p>With PlusPlus you can instill a culture of learning that puts your workforce first. Experts schedule time for onboarding and training. Those seeking new skills or advice connect to experts they need. Voila! The effectiveness of tribal knowledge transfer increased without an impact on productivity.</p>
+			
 
 		</div>
 
