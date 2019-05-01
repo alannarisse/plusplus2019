@@ -20,7 +20,7 @@
 
 		<!-- platform -->
 		<div class="platform-img-box">
-			<img src="/wp-content/uploads/2018/08/integrations.png">
+			<img src="/wp-content/themes/plusplus2019/images/integrations.png">
 		</div>
 		<div>
 			<h2>The PlusPlus Platform offers Enterprise Integration</h2>
