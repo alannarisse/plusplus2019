@@ -42,19 +42,17 @@
 		<div>&nbsp;</div>
 		<div class="horiz-right"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?>
 		</div>
-
 		<div>
-			<img src="/wp-content/themes/plusplus2019/images/products/Coaching-index.png" style="width: 100%;">
-		</div>
-		<div>
-			<h3>Coaching and Mentoring</h3>
+			<h2>Coaching and Mentoring</h2>
 			<p>Effective knowledge transfer at scale that’s as unique as your organization? Tailored to each employee’s needs? Yes!</p>
 
 			<p>With PlusPlus you can instill a culture of learning that puts your workforce first. Experts schedule time for onboarding and training. Those seeking new skills or advice connect to experts they need. Voila! The effectiveness of tribal knowledge transfer increased without an impact on productivity.</p>
 			<a href="coaching-and-mentoring/" class="button">Learn More</a>
-			
-
 		</div>
+		<div>
+			<img src="/wp-content/themes/plusplus2019/images/products/Coaching-index.png" style="width: 100%;">
+		</div>
+		
 
 	</section>
 	</main>
