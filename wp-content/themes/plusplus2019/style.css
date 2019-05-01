@@ -477,6 +477,11 @@ nav {
   grid-template-columns: 1fr 3fr;
 }
 
+nav .desktop {
+  position: absolute;
+  right: 20px;
+}
+
 nav input {
   display: none;
 }
@@ -921,6 +926,14 @@ MEDIA QUERIES
     font-size: 6.5em;
   }
 
+  body.home nav a {
+    color: #fff;
+  }
+
+  body.home nav .button:hover {
+    background: none;
+  }
+
   body.blog section, body.archive section {
     display: block;
   }
@@ -933,11 +946,9 @@ MEDIA QUERIES
   .top-horiz {
     margin-left: 0;
   }
-
   .top-horiz h3 {
     margin-left: 40px;
   }
-
   .top-horiz svg {
     margin-left: 0;
   }
@@ -951,41 +962,95 @@ MEDIA QUERIES
   }
 
   nav {
+    position: relative;
     grid-template-columns: 1fr;
+    /* default mobile until icon is clicked */
   }
-
   nav ul {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    /*display: none;*/
   }
-
-  nav li {
+  nav li:nth-child(1) {
+    padding-top: 2em;
+  }
+  nav li, nav li.button {
     display: block;
-    margin-right: 20px;
-    margin: 0 1.2 0 0;
+    margin: 0.6em 0;
+    font-size: 2.6em;
+    font-weight: 700;
+  }
+  nav li.button, nav li.button a:hover {
+    background: none;
+    color: #fff;
+    padding: 0;
+  }
+  nav .mobile {
+    position: absolute;
+    left: 0;
+    top: -20px;
+  }
+  nav .mobile ul {
+    /*display: block;*/
+    visibility: visible;
+    opacity: 1;
+    background-color: #75223D;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+  }
+  nav .icon {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    z-index: 99;
+  }
+  nav .hamburger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+  nav .hamburger:before, nav .hamburger:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+  nav .hamburger:before {
+    top: -16px;
+  }
+  nav .hamburger:after {
+    top: 16px;
+  }
+  nav .icon.active .hamburger {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 1 2px 5px rgba(0, 0, 0, 0);
+  }
+  nav .icon.active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  nav .icon.active .hamburger:after {
+    top: 0;
+    transform: rotate(135deg);
   }
 
-  nav li a.button {
-    margin: 0;
-  }
-
-  nav label {
-    display: block;
-    text-align: right;
-    font-size: 3em;
-    line-height: 1.4em;
-    background: url("assets/menu.svg") no-repeat 0 1px;
-    background-size: 20px auto;
-    background-position: top right;
-    border-right: 20px solid transparent;
-    border-top: 20px solid transparent;
-    padding: 10px 10px;
-  }
-
-  nav label input:checked ~ ul {
-    /* ~ is the adjacened sibling selector */
-    display: block;
-  }
-
+  /*-- Hamburger fun -- */
+  /*-- Hamburger Fun -- */
   section h1, section p, section ul {
     width: 100%;
   }

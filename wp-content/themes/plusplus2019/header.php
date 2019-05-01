@@ -22,16 +22,17 @@ echo $template_var; ?>
 			} else {
 				get_template_part('images/inline', 'logo_teal.svg');
 			} ?>
-			</a>
-		<label>
-			<input type="checkbox">
-				<?php
-					$args = array(
-						'theme_location' => 'primary'
-					);
-				?>
+		</a>
+		<div class="desktop">
+		<?php
+			$args = array(
+				'theme_location' => 'primary'
+			);
+		?>
 
-				<?php wp_nav_menu($args); ?>
-
-		</label>
+		<?php wp_nav_menu($args); ?>
+		</div>
+		<div class="icon">
+			<div class="hamburger"></div>
+		</div>
 	</nav>
