@@ -4,7 +4,7 @@
 			<div class="post-thumbnail"><a href="<?php the_permalink(); ?>" ><?php the_post_thumbnail(); ?></a></div>
 		<?php endif; ?>
 		<h2><?php the_title(); ?></h2>
-		<?php the_category( ', ' ); ?>
+		<?php /* the_category( ', ' );  */?>
 		<p><?php the_content(); ?></p>
 		
 		<p>
@@ -17,7 +17,6 @@
 			<div class="post-thumbnail"><a href="<?php the_permalink(); ?>" ><?php the_post_thumbnail(); ?></a></div>
 		<?php endif; ?>
 		<h2><?php the_title(); ?></h2>
-		<?php the_category( ', ' ); ?>
 		<p><?php the_content(); ?></p>
 		
 		<p>

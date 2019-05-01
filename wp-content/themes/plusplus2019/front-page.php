@@ -18,31 +18,7 @@
 		<div><?php get_template_part('images/inline', 'bkg_pluses_lg.svg'); ?></div>
 		</section>
 
-	<?php if( have_rows('home_section')): ?>
-	<section>
-	<?php while( have_rows('home_section')): the_row(); ?>
 
-		<div>
-			<h2><?php the_sub_field('section_header'); ?>
-			<?php the_sub_field('content_box1'); ?>
-		</div>
-		<div style="margin-right: -80px;"><?php get_template_part('images/inline', 'bkg_triangle.svg'); ?></div>
-		
-		<div class="hidesm"  style="margin-left: -80px;"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?></div>
-		<div>
-			<?php the_sub_field('content_box2'); ?>
-
-			<p class="hidesm" style="margin: 2em -80px 2em 0;"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?></p>
-
-			<?php the_sub_field('content_box3'); ?>
-
-		</div>
-
-
-<?php endwhile; ?>
-		</section>
-
-<?php endif; ?>		
 
 		<section>
 			<div>
@@ -59,14 +35,14 @@
 
 			<p>Just like no two individuals learn the same way, neither do organizations. Unlike monolithic learning management systems, our platform lets employees also choose live events where all examples and references are specific to your organization. Create a culture of coaching and intense development where employees have the opportunity to do what they do best every day. Deliver the right training to the right people at the right time.</p>
 
-			<p class="hidesm"><img src="images/bkg_horiz.svg" style="margin: 2em -80px 2em 0;"></p>
+			<p class="hidesm"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?></p>
 
 			<h3>Retain your employees.</h3>
 			<p>Our platform is flexible, designed to guide organizations like yours through all states of cultural change. With add-on modules, such as <a href="#">Coaching</a>, go beyond training employees for
 			today's work and relying on individual managers for career development. Grow and scale early
 			employees. Increase employee engagement and satisfaction by investing in your employees
 			and developing them for the work they aspire to do.</p>
-			<p><a class="button" href="#">schedule a demo</a></p>
+			<p><a class="button" href="/demo">schedule a demo</a></p>
 			</div>
 		</section>
 

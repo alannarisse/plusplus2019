@@ -32,6 +32,7 @@
 
 			<p>PlusPlus plays well with other apps, from Google Calendar to Workday and Slack.
 			</p>
+			<a href="/platform" class="button">Learn More</a>
 			
 		</div>
 		<!-- // platform -->
@@ -50,6 +51,7 @@
 			<p>Effective knowledge transfer at scale that’s as unique as your organization? Tailored to each employee’s needs? Yes!</p>
 
 			<p>With PlusPlus you can instill a culture of learning that puts your workforce first. Experts schedule time for onboarding and training. Those seeking new skills or advice connect to experts they need. Voila! The effectiveness of tribal knowledge transfer increased without an impact on productivity.</p>
+			<a href="coaching-and-mentoring/" class="button">Learn More</a>
 			
 
 		</div>

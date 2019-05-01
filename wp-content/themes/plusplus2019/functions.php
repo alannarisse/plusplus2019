@@ -55,6 +55,7 @@ function documents_post_type (){
 		'rewrite' => true,
 		'capability_type' => 'post',
 		'hierarchical' => true,
+		'show_in_rest' => true,
 		'supports' => array(
 			'title',
 			'editor',

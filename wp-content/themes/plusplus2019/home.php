@@ -1,12 +1,15 @@
 <?php get_header(); ?>
 	<main>
+		
 		<div class="top-horiz">
+			<div>
+				<h2>IDEAS Magazine</h2>
+			</div>
+			<div>&nbsp;</div>
 			<h3>Featured Articles</h3>
 			<?php get_template_part('images/inline', 'bkg_horiz.svg'); ?>
 		</div>
-		<section>
-<!-- 			is_tag( 'featured' );
- -->
+		<section class="featured">
 		<?php 
 		$args = array(
         	'posts_per_page' => 2,
