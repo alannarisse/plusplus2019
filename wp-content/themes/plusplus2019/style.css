@@ -683,7 +683,7 @@ footer li {
 }
 .docs-cards h1, .docs-cards h2, .docs-cards h3 {
   font-size: 1.5em;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 .docs-cards a.btn-read-more {
   background: #000;
@@ -813,7 +813,7 @@ body.blog section:nth-child(2), body.archive section:nth-child(2) {
   padding: 0 60px;
 }
 
-body.blog h1, body.archive h1 {
+body.blog h1 {
   font-size: 2em;
   line-height: 1.4em;
 }
@@ -829,35 +829,21 @@ body.demo section:nth-child(2) {
 
 /* //IDEAS */
 /* Support & Services */
-.page-id-895, .page-template-page-docs-template, .single-docs {
+.page-id-895, .page-template-page-docs-template, .single-docs, .post-type-archive-docs {
   background-color: #FFB500;
 }
-.page-id-895 button:hover, .page-id-895 .button:hover, .page-id-895 .button a:hover, .page-template-page-docs-template button:hover, .page-template-page-docs-template .button:hover, .page-template-page-docs-template .button a:hover, .single-docs button:hover, .single-docs .button:hover, .single-docs .button a:hover {
+.page-id-895 button:hover, .page-id-895 .button:hover, .page-id-895 .button a:hover, .page-template-page-docs-template button:hover, .page-template-page-docs-template .button:hover, .page-template-page-docs-template .button a:hover, .single-docs button:hover, .single-docs .button:hover, .single-docs .button a:hover, .post-type-archive-docs button:hover, .post-type-archive-docs .button:hover, .post-type-archive-docs .button a:hover {
   background-color: #BD84CC;
   /* teal */
 }
-.page-id-895 button, .page-id-895 .button, .page-template-page-docs-template button, .page-template-page-docs-template .button, .single-docs button, .single-docs .button {
+.page-id-895 button, .page-id-895 .button, .page-template-page-docs-template button, .page-template-page-docs-template .button, .single-docs button, .single-docs .button, .post-type-archive-docs button, .post-type-archive-docs .button {
   background-color: #1BBA8A;
 }
-.page-id-895 aside a, .page-template-page-docs-template aside a, .single-docs aside a {
+.page-id-895 aside a, .page-template-page-docs-template aside a, .single-docs aside a, .post-type-archive-docs aside a {
   color: #034747;
 }
 
 /* Docs */
-.post-type-archive-docs {
-  background-color: #FFB500;
-  color: #fff;
-}
-.post-type-archive-docs nav a, .post-type-archive-docs footer, .post-type-archive-docs footer a {
-  color: #fff;
-}
-.post-type-archive-docs nav a:hover, .post-type-archive-docs footer a:hover {
-  color: #BD84CC;
-}
-.post-type-archive-docs h3 {
-  font-weight: 600;
-}
-
 /* Product */
 .page-id-425, .page-template-page-product-template, .page-id-1055 {
   background-color: #75223D;
