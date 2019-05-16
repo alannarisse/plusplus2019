@@ -24,7 +24,7 @@
   	$(document).ready(function(){
   		$('.icon').click(function(){
   			$('.icon').toggleClass('active');
-  			$('.desktop').toggleClass('mobile')
+  			$('.desktop').toggleClass('mobile');
   		})
   	})
   </script>

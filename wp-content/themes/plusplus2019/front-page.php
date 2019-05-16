@@ -13,23 +13,23 @@
 			<li>Keep new hires and long-term employees engaged today and primed for tomorrow's challenges through a culture of continuous learning.</li>
 		</ul>
 
-		<p><button class="button">Schedule a Demo</button></p>
+		<p class="cta"><button class="button">Schedule a Demo</button></p>
 		</div>
 		<div><?php get_template_part('images/inline', 'bkg_pluses_lg.svg'); ?></div>
 		</section>
-
-
 
 		<section>
 			<div>
 				<h2>What  you can  do with PlusPlus</h2>
 				<h3>Scale informal face-to-face, peer-to-peer learning.</h3>
 				<p>Our platform exposes your "know who" network and expands learning and development opportunities across your organization. Anyone can discover and plan to attend informal brown bag presentations given by one of your senior or long-term employees. Learning and Development can see which topics, which teachers, and more are in demand. People teams or HR can identify employees who might be unaware of training key to their career development.</p>
+				<span class="horiz-left"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?></span>
 			</div>
 			<div class="hidesm tri-right">
-				<?php get_template_part('images/inline', 'bkg_triangle.svg'); ?></div>
+				<img src="/wp-content/themes/plusplus2019/images/bk_triangle_rt.png">
+				<?php //get_template_part('images/inline', 'bkg_triangle.svg'); ?></div>
 			
-			<div class="hidesm horiz-left"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?></div>
+			<div class="hidesm horiz-left"></div>
 			<div>
 			<h3>Close your "know how" gap.</h3>
 
@@ -54,6 +54,15 @@
 				<h3>Peer Learning</h3>
 				<p>Face-to-face live learning from peers is the most effective way to transfer tribal knowledge. Tribal knowledge, or "know how," is knowledge gained from time spent at your organization within a specific context and specific roles. PlusPlus increases the personal impact of eager engineering staff at Shopify by providing tools to scale their unofficial lunch-and-learns and spontaneous training sessions.</p>
 				<p><a class="button" href="https://plusplus.co/ideas/3-steps-to-drive-adoption-of-a-new-cultural-concept/">read more</a></p>
+
+				<h3>Whole Person Development</h3>
+				<p>At Shopify, anyone, at any level—not just executives, can sign up for coaching sessions as often as they want. Without the automation provided by the PlusPlus platform, they'd be unable to offer 1000s of coaching sessions globally per year eliminating physical location as a barrier. Delivering what's good for people, in addition to just what's profitable for their organization, gives Shopify a competitive advantage.</p>
+				<a href="https://plusplus.co/ideas/democratizing-coaching-at-shopify/" class="button">learn how</a>
+
+				<h3>A Culture of Learning</h3>
+				<p>Vibrant engineering cultures that attract, grow, and empower world-class talent take care and feeding. SSENSE increased employee engagement by balancing external conferences and classes with peer-to-peer learning. They ask everyone who attends conferences to host live sessions distilling what they've learned. This fosters a sense of teamwork, team spirit, and inter-team collaborations.</p>
+				<a href="balancing-peer-to-peer-learning-with-external-conferences/" class="button">discover how</a>
+				<button>schedule a demo</button>
 			</div>
 
 			<div>
@@ -63,13 +72,7 @@
 				who comes to work. It's a dual situation – helping with the work problems as well as the how:
 				How can I be my best self at work in a way that's healthy for me?</blockquote>
 				<cite>Rene Moortgat, Talent Development Operations Specialist at Shopify</cite>
-			</div>
-			<div>
-				<h3>Whole Person Development</h3>
-				<p>At Shopify, anyone, at any level—not just executives, can sign up for coaching sessions as often as they want. Without the automation provided by the PlusPlus platform, they'd be unable to offer 1000s of coaching sessions globally per year eliminating physical location as a barrier. Delivering what's good for people, in addition to just what's profitable for their organization, gives Shopify a competitive advantage.</p>
-				<a href="https://plusplus.co/ideas/democratizing-coaching-at-shopify/" class="button">learn how</a>
-			</div>
-			<div>
+
 				<blockquote>
 				For most engineers, a one-hour session at a conference about the specifics of how to use a
 				technology is far less valuable than learning how that particular concept is applied at your
@@ -78,20 +81,7 @@
 				</blockquote>
 				<cite>Tuan Bach, Application Development Director at SSENSE</cite>
 			</div>
-
-
-			<div>
-				<h3>A Culture of Learning</h3>
-				<p>Vibrant engineering cultures that attract, grow, and empower world-class talent take care and feeding. SSENSE increased employee engagement by balancing external conferences and classes with peer-to-peer learning. They ask everyone who attends conferences to host live sessions distilling what they've learned. This fosters a sense of teamwork, team spirit, and inter-team collaborations.</p>
-				<a href="balancing-peer-to-peer-learning-with-external-conferences/" class="button">discover how</a>
-				<button>schedule a demo</button>
-			</div>
-			<div>
-				<blockquote>
-					The wellbeing ingredient is something that sets coaching at Shopify apart from what may be offered in other companies. The coaches want to develop the whole person, not just the person who comes to work. It's a dual situation—helping with the work problems as well as the how: How can I be my best self at work in a way that's healthy for me?
-				</blockquote>
-				<cite>Rene Moortgat, <br>Talent Development Operations Specialist at Shopify</cite>
-			</div>
+			
 		</section>
 
 	</main>
