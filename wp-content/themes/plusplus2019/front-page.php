@@ -5,7 +5,7 @@
 		<div>
 		<h1>Evolve Today</h1>
 
-		<h3>With our cloud-based, flexible knowledge sharing platform evolve your organization.</h3>
+		<h4>With our cloud-based, flexible knowledge sharing platform evolve your organization.</h4>
 
 		<ul class="plus">
 			<li>Get your people up to speed quickly on how today's technologies work in your organization and are used by your teams.</li>
