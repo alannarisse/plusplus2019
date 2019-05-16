@@ -620,6 +620,22 @@ button:hover, .button:hover, .button a:hover {
   color: #fff;
 }
 
+a.more-link {
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  font-weight: 400;
+}
+
+a.more-link:hover {
+  color: #BD84CC;
+}
+
+.more-link img {
+  margin-bottom: -2px;
+  width: 14px;
+}
+
 /* //BUTTONS */
 img.round {
   border-radius: 50%;
@@ -872,19 +888,19 @@ body.single section {
 }
 
 /* IDEAS */
-article h1 {
+body.blog article h1 {
   font-size: 2em;
   line-height: 1.4em;
 }
-article h2 {
+body.blog article h2 {
   font-size: 1.5em;
   line-height: 1.4em;
 }
-article img {
+body.blog article img {
   width: 100%;
   height: auto !important;
 }
-article div {
+body.blog article div {
   width: 100% !important;
 }
 

@@ -13,7 +13,7 @@
 
 <?php else : ?>
 	<article>
-		<?php if(has_post_thumbnail()) : ?>
+		<?php if(has_post_thumbnail() && 'docs' !== get_post_type() ) : ?>
 			<div class="post-thumbnail"><a href="<?php the_permalink(); ?>" ><?php the_post_thumbnail(); ?></a></div>
 		<?php endif; ?>
 		<h2><?php the_title(); ?></h2>
