@@ -418,6 +418,10 @@ cite :before {
   content: "-- ";
 }
 
+figcaption {
+  color: #fff;
+}
+
 section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -475,6 +479,7 @@ h5 {
 nav {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  font-weight: 400;
 }
 nav .desktop {
   position: absolute;
@@ -608,6 +613,7 @@ button, .button {
   transition-duration: 0.4s;
   margin: 1em 1em auto auto;
   display: inline-block;
+  text-transform: capitalize;
 }
 
 #menu-top-nav li.button a, #menu-primary li.button a {
@@ -972,10 +978,8 @@ body.demo section:nth-child(2) {
 .page-id-425 button:hover, .page-id-425 a.button:hover, .page-template-page-product-template button:hover, .page-template-page-product-template a.button:hover, .page-id-1055 button:hover, .page-id-1055 a.button:hover {
   background-color: #BD84CC;
 }
-
-/* Platform */
-.page-id-1055 section {
-  display: block;
+.page-id-425 hr, .page-template-page-product-template hr, .page-id-1055 hr {
+  width: 100%;
 }
 
 /* About Page */
