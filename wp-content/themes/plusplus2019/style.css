@@ -440,12 +440,12 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
   line-height: 1.4em;
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 600;
   line-height: 1.2em;
 }
@@ -822,7 +822,7 @@ body.home nav a:hover {
   color: #1BBA8A;
 }
 body.home h1 {
-  font-size: 8.5em;
+  font-size: 6.5em;
   /* 40px */
   font-weight: 600;
   line-height: 1em;
@@ -831,14 +831,14 @@ body.home h1 {
   margin-bottom: 0.5em;
 }
 body.home h2 {
-  font-size: 6.4em;
+  font-size: 5.4em;
 }
 body.home h3 {
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1.4em;
 }
 body.home h4 {
-  font-size: 2.4em;
+  font-size: 2em;
 }
 body.home .cta {
   text-align: center;
@@ -957,6 +957,9 @@ body.demo section:nth-child(2) {
   background-color: #75223D;
   color: #8EEDCD;
 }
+.page-id-425 section, .page-template-page-product-template section, .page-id-1055 section {
+  grid-template-columns: 2fr 1fr;
+}
 .page-id-425 footer a, .page-id-425 nav a, .page-template-page-product-template footer a, .page-template-page-product-template nav a, .page-id-1055 footer a, .page-id-1055 nav a {
   color: #8EEDCD;
 }
@@ -990,7 +993,40 @@ body.demo section:nth-child(2) {
 MEDIA QUERIES
 ========================================
 */
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-size: 5em;
+    line-height: 1.4em;
+  }
+
+  h2 {
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 1.2em;
+  }
+
+  h3 {
+    font-size: 2em;
+    line-height: 1.6em;
+    font-weight: 300;
+    margin-bottom: 0em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+  }
+
+  h5 {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 300;
+    color: #BD84CC;
+    margin-bottom: 1em;
+  }
+
   body.ideas section.blog-gallery {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -1003,16 +1039,7 @@ MEDIA QUERIES
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media only screen and (max-width: 1024px) {
-  body.home section:nth-child(1) div:nth-child(2) svg {
-    display: none;
-  }
-
-  /* hide homepage plus bkg image */
-  section {
-    grid-column-gap: 4em;
-  }
-
+@media only screen and (max-width: 1440px) {
   ul.timeline li:nth-child(odd) {
     margin-left: 0;
   }
@@ -1024,6 +1051,16 @@ MEDIA QUERIES
   ul.timeline li {
     background-image: url("images/timeline-arrow-rt.png");
     padding: 2.6em 0 0 3.4em;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body.home section:nth-child(1) div:nth-child(2) svg {
+    display: none;
+  }
+
+  /* hide homepage plus bkg image */
+  section {
+    grid-column-gap: 4em;
   }
 
   body.blog section, body.archive section {
