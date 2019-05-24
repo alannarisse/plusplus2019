@@ -5,14 +5,14 @@
 		<ul>
 			<li><a href="/docs">Documentation</a></li>
 			<li><a href="/ideas">IDEAS Magazine</a></li>
-			<li><a href="#">TechKnowCon</a></li>
-			<li><a href="#">Events</a></li>
+			<!-- <li><a href="#">TechKnowCon</a></li>
+			<li><a href="#">Events</a></li> -->
 		</ul>
 		<ul>
-			<li><a href="/hello">Contact Us</a></li>
-			<li><a href="#">YouTube</a></li>
+			<li><a href="/demo">Contact Us</a></li>
+			<!-- <li><a href="#">YouTube</a></li> -->
 			<li><a href="https://twitter.com/PlusPlusHQ" target="_blank">Twitter</a></li>
-			<li><a href="#">LinkedIn</a></li>
+			<li><a href="https://www.linkedin.com/company/plusplus/" target="_blank">LinkedIn</a></li>
 		</ul>
 	</footer>
 	<?php wp_footer(); ?>

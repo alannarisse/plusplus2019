@@ -8,7 +8,7 @@ Template Name: Product Template
 <?php get_header(); ?>
 
 	<main>
-		<section>
+		<section class="no-grid">
 		<div>
  		<h1><?php the_title(); ?></h1>
 		<!-- the content here -->
