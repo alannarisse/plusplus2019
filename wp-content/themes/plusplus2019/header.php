@@ -29,7 +29,6 @@ echo $template_var; ?>
 				'theme_location' => 'primary'
 			);
 		?>
-
 		<?php wp_nav_menu($args); ?>
 		</div>
 		<div class="icon">
