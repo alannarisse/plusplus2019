@@ -11,7 +11,7 @@
 			<li><a href="/support-services/">Support &amp; Services</a></li>
 		</ul>
 		<ul>
-			<li><a href="/demo">Contact Us</a></li>
+			<li><a href="/hello">Contact Us</a></li>
 			<!-- <li><a href="#">YouTube</a></li> -->
 			<li><a href="https://twitter.com/PlusPlusHQ" target="_blank">Twitter</a></li>
 			<li><a href="https://www.linkedin.com/company/plusplus/" target="_blank">LinkedIn</a></li>
