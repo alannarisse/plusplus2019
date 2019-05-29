@@ -20,7 +20,11 @@ function action_required_notice(){
   $current_screen = get_current_screen();
   if ( $current_screen->parent_base !== 'leadin' ) {
     $leadin_icon = LEADIN_PATH . '/images/sprocket.svg';
-    echo '<div class="notice notice-warning is-dismissible"><p><img src="' . $leadin_icon . '" height="16" style="margin-bottom: -3px" /> The HubSpot plugin isn’t connected right now. To use HubSpot tools on your WordPress site, <a href="admin.php?page=leadin">connect the plugin now</a>.</p></div>';
+    if ( get_option( 'leadin_outdated_version' ) ) {
+      echo '<div class="notice notice-warning is-dismissible"><p><img src="' . $leadin_icon . '" height="16" style="margin-bottom: -3px" /> ' . sprintf( __('Your current version of the HubSpot plugin is outdated, and errors may occur. <a class="thickbox open-plugin-details-modal" href="%1$splugin-install.php?tab=plugin-information&amp;plugin=leadin&amp;section=changelog&amp;TB_iframe=true&amp;width=616&amp;height=1046">Please update now.</a>', 'leadin'), admin_url() ) . '</p></div>';
+    } else if ( ! get_option( 'leadin_portalId' ) ) {
+      echo '<div class="notice notice-warning is-dismissible"><p><img src="' . $leadin_icon . '" height="16" style="margin-bottom: -3px" /> ' . __('The HubSpot plugin isn’t connected right now. To use HubSpot tools on your WordPress site, <a href="admin.php?page=leadin">connect the plugin now</a>.', 'leadin') . '</p></div>';
+    }
   }
 }
 
@@ -51,9 +55,10 @@ class WPLeadInAdmin {
     }
 
     add_action( 'admin_menu', array( &$this, 'leadin_add_menu_items' ) );
-    add_action( 'admin_print_scripts', array( &$this, 'add_leadin_admin_scripts' ) );
+    add_action( 'admin_enqueue_scripts', array( &$this, 'add_leadin_admin_scripts' ) );
     add_filter( 'plugin_action_links_' . 'leadin/leadin.php', array( $this, 'leadin_plugin_settings_link' ) );
-    add_action( 'admin_notices', array( &$this, 'leadin_add_iframe' ) );
+    add_action( 'admin_notices', array( &$this, 'leadin_add_background_iframe' ) );
+    add_action( 'admin_notices', 'action_required_notice' );
 
     if ($affiliate = $this->get_affiliate_code()) {
         add_option( 'hubspot_affiliate_code', $affiliate );
@@ -126,15 +131,14 @@ class WPLeadInAdmin {
     $notificationIcon = '';
     if ( ! get_option( 'leadin_portalId' ) ) {
       $notificationIcon = ' <span class="update-plugins count-1"><span class="plugin-count">!</span></span>';
-      add_action('admin_notices', 'action_required_notice');
     }
 
-    add_menu_page( 'HubSpot', 'HubSpot'.$notificationIcon, $capability, 'leadin', array( $this, 'leadin_build_app' ), 'dashicons-sprocket', '25.100713' );
+    add_menu_page( __('HubSpot', 'leadin'), __('HubSpot', 'leadin').$notificationIcon, $capability, 'leadin', array( $this, 'leadin_build_app' ), 'dashicons-sprocket', '25.100713' );
 
     $portal_id = get_option('leadin_portalId');
     if ( !empty( $portal_id ) ) {
-      add_submenu_page('leadin', 'Forms', 'Forms', 'activate_plugins', 'leadin_forms', array($this, 'leadin_build_app'));
-      add_submenu_page('leadin', 'Settings', 'Settings', 'activate_plugins', 'leadin_settings', array($this, 'leadin_build_app'));
+      add_submenu_page('leadin', __('Forms', 'leadin'), __('Forms', 'leadin'), 'activate_plugins', 'leadin_forms', array($this, 'leadin_build_app'));
+      add_submenu_page('leadin', __('Settings', 'leadin'), __('Settings', 'leadin'), 'activate_plugins', 'leadin_settings', array($this, 'leadin_build_app'));
       remove_submenu_page('leadin','leadin');
     }
   }
@@ -156,7 +160,7 @@ class WPLeadInAdmin {
       $page = "leadin";
     }
     $url           = get_admin_url( get_current_blog_id(), "admin.php?page=$page" );
-    $settings_link = '<a href="' . $url . '">Settings</a>';
+    $settings_link = '<a href="' . $url . '">' . __( 'Settings', 'leadin' ) . '</a>';
     array_unshift( $links, $settings_link );
     return $links;
   }
@@ -165,26 +169,44 @@ class WPLeadInAdmin {
    * Creates leadin app
    */
   function leadin_build_app() {
-    wp_enqueue_style( 'leadin-bridge-css' );
-  }
-
-  /**
-   * Add iframe
-   */
-  function leadin_add_iframe() {
     global $wp_version;
+
+    wp_enqueue_style( 'leadin-bridge-css' );
+
     $error_message = "";
 
     if ( version_compare( phpversion(), LEADIN_REQUIRED_PHP_VERSION, '<' ) ) {
-      $error_message = "HubSpot All-In-One Marketing ".LEADIN_PLUGIN_VERSION." requires PHP ".LEADIN_REQUIRED_PHP_VERSION." or higher. Please upgrade WordPress first.";
+      $error_message = sprintf(
+        __( 'HubSpot All-In-One Marketing %1$s requires PHP %2$s or higher. Please upgrade WordPress first.', 'leadin' ),
+        LEADIN_PLUGIN_VERSION,
+        LEADIN_REQUIRED_PHP_VERSION
+      );
+
     } else if ( version_compare( $wp_version, LEADIN_REQUIRED_WP_VERSION, '<' ) ) {
-      $error_message = "HubSpot All-In-One Marketing ".LEADIN_PLUGIN_VERSION." requires PHP ".LEADIN_REQUIRED_WP_VERSION." or higher. Please upgrade WordPress first.";
+      $error_message = sprintf(
+        __( 'HubSpot All-In-One Marketing %1$s requires PHP %2$s or higher. Please upgrade WordPress first.', 'leadin' ),
+        LEADIN_PLUGIN_VERSION,
+        LEADIN_REQUIRED_WP_VERSION
+      );
     }
 
     if ($error_message) {
       echo "<div class='notice notice-warning'><p>$error_message</p></div>";
     } else {
-      echo '<div id="leadin"></div>';
+      $iframe_url = leadin_get_iframe_src();
+      ?>
+        <iframe id="leadin-iframe" src="<?= $iframe_url ?>"></iframe>
+      <?php
+    }
+  }
+
+  function leadin_add_background_iframe() {
+    $screen = get_current_screen();
+    if ( $screen->id === 'dashboard' ) {
+      $background_iframe_url = leadin_get_background_iframe_src();
+      ?>
+        <iframe class="leadin-background-iframe" style="display: none" id="leadin-iframe" src="<?= $background_iframe_url ?>"></iframe>
+      <?php
     }
   }
 
@@ -195,79 +217,31 @@ class WPLeadInAdmin {
    * Adds admin javascript
    */
   function add_leadin_admin_scripts() {
-    global $pagenow;
-    global $wp_roles;
     global $wp_version;
 
-    $ajaxUrl = get_admin_url( get_current_blog_id(), 'admin-ajax.php' );
-    $wpUser = wp_get_current_user();
-
-    /**
-     * Note! Some of this information will be sent to Sentry on errors.
-     * If you add any sensitive information, make sure to delete it here
-     * https://git.hubteam.com/HubSpot/hubspot-plugin-ui/blob/cd3818adaa91fb83dc7f053956995247c878bb63/bridge/static/js/leadinWordPressShell.js#L14
-     */
     $leadin_config = array(
-      'portalId'              => get_option( 'leadin_portalId' ),
-      'affiliateCode'         => get_option( 'hubspot_affiliate_code' ),
-      'acquisitionAttributionParams' => $this->get_acquisition_attribution_option(),
-      'env'                   => constant( 'LEADIN_ENV' ),
-      'user'                  => $this->leadin_get_user_for_tracking(),
-      'allRoles'              => $wp_roles->get_names(),
-      'leadinPluginVersion'   => constant( 'LEADIN_PLUGIN_VERSION' ),
-      'wpVersion'             => $wp_version,
-      'siteUrl'               => get_site_url(),
-      'adminEmail'            => get_option( 'admin_email' ),
-      'siteName'              => get_bloginfo( 'name' ),
-      'adminBaseUrl'          => get_admin_url( get_current_blog_id(), 'admin.php' ),
-      'leadinPluginDirectory' => LEADIN_PLUGIN_SLUG,
-      'ajaxUrl'               => is_ssl() ? str_replace( 'http:', 'https:', $ajaxUrl ) : str_replace( 'https:', 'http:', $ajaxUrl ),
-      'locale'                => get_locale(),
-      'timezone'              => get_option( 'gmt_offset' ),
-      'timezoneString'        => get_option( 'timezone_string' ), // If not set by the user manually it will be an empty string
-      'connectionTimeInMs'    => get_option( 'leadin_connectionTimeInMs' ),
-      'plugins'               => get_plugins(),
-      'phpVersion'            => phpversion(),
-      'wpUserFirstName'       => $wpUser->user_firstname,
-      'wpUserLastName'        => $wpUser->user_lastname,
-      'wpUserEmail'       		=> $wpUser->user_email,
+      'adminUrl'            => admin_url(),
+      'ajaxUrl'             => leadin_get_ajax_url(),
+      'env'                 => constant( 'LEADIN_ENV' ),
+      'hubspotBaseUrl'      => constant( 'LEADIN_BASE_URL' ),
+      'leadinPluginVersion' => constant( 'LEADIN_PLUGIN_VERSION' ),
+      'locale'              => get_locale(),
+      'phpVersion'          => leadin_parse_version( phpversion() ),
+      'plugins'             => get_plugins(),
+      'portalId'            => get_option( 'leadin_portalId' ),
+      'wpVersion'           => leadin_parse_version( $wp_version ),
     );
 
-    wp_register_script( 'leadin-head-js', leadin_get_resource_url( '/bundle/head/head.js' ), false, false, false );
-    wp_localize_script( 'leadin-head-js', 'leadin_config', $leadin_config );
-    wp_enqueue_script( 'leadin-head-js' );
+    $leadin_i18n = array(
+      'chatflows' => __( 'Chatflows', 'leadin' ),
+    );
 
-    wp_register_script( 'leadin-bridge-app', leadin_get_resource_url( '/bundle/app.js' ), array( 'backbone' ), false, true );
-    wp_register_style( 'leadin-bridge-css', leadin_get_resource_url( '/bundle/app.css' ) );
-    wp_register_script( 'leadin-js', LEADIN_PATH.'/assets/leadin.js', false, false, true );
-
-    wp_enqueue_script( 'leadin-bridge-app' );
+    wp_register_script( 'leadin-raven-js', LEADIN_PATH.'/scripts/raven.min.js' );
+    wp_register_style( 'leadin-bridge-css', LEADIN_PATH.'/style/leadin-bridge.css' );
+    wp_register_script( 'leadin-js', LEADIN_PATH.'/scripts/leadin.js', array( 'leadin-raven-js' ), false, true );
+    wp_localize_script( 'leadin-js', 'leadinConfig', $leadin_config );
+    wp_localize_script( 'leadin-js', 'leadinI18n', $leadin_i18n );
     wp_enqueue_script( 'leadin-js' );
-  }
-
-  // =============================================
-  // Internal Class Functions
-  // =============================================
-  function leadin_get_user_for_tracking() {
-    $leadin_user          = leadin_get_current_user();
-    $tracking_leadin_user = array(
-      'hashed_wp_url'   => $leadin_user['user_id'],
-      'name'            => $leadin_user['alias'],
-      'email'           => $leadin_user['email'],
-      'wp-url'          => $leadin_user['wp_url'],
-      'wp-version'      => $leadin_user['wp_version'],
-      'li-source'       => LEADIN_SOURCE,
-      'website'         => $leadin_user['wp_url'],
-      'company'         => $leadin_user['wp_url'],
-      'utm_source'      => $leadin_user['utm_source'],
-      'utm_medium'      => $leadin_user['utm_medium'],
-      'utm_term'        => $leadin_user['utm_term'],
-      'utm_content'     => $leadin_user['utm_term'],
-      'utm_campaign'    => $leadin_user['utm_campaign'],
-      'referral_source' => $leadin_user['referral_source'],
-      'user_email'      => $leadin_user['user_email'],
-    );
-    return $tracking_leadin_user;
   }
 
   /**

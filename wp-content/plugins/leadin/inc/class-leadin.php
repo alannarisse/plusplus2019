@@ -43,7 +43,7 @@ class WPLeadIn {
     $portalId    = get_option( 'leadin_portalId' );
 
     if ( empty( $portalId ) ) {
-      echo '<!-- HubSpot embed JS disabled as a portalId has not yet been configured -->';
+      echo '<!-- HubSpot WordPress Plugin v' . LEADIN_PLUGIN_VERSION . ': embed JS disabled as a portalId has not yet been configured -->';
       return;
     }
 
@@ -78,7 +78,7 @@ class WPLeadIn {
 
   function add_common_frontend_scripts() {
     if ( is_user_logged_in() ) {
-      wp_register_style( 'leadin-css', LEADIN_PATH.'/assets/leadin.css' );
+      wp_register_style( 'leadin-css', LEADIN_PATH.'/style/leadin.css' );
       wp_enqueue_style( 'leadin-css' );
     }
   }

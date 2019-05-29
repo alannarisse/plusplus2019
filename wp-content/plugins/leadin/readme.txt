@@ -1,10 +1,12 @@
 === HubSpot All-In-One Marketing - Forms, Popups, Live Chat ===
 Contributors: HubSpotDev, leadin
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.html
 Tags: forms, popup, live chat, contact form, crm, newsletter, marketing, lead generation, hubspot, mailchimp, constant contact
 Requires at least: 4.0
-Tested up to: 5.1
+Tested up to: 5.2
 Requires PHP: 5.6
-Stable tag: 7.3.1
+Stable tag: 7.5.1
 
 HubSpot All-In-One Marketing, is a free all-in-one marketing plugin that allows you to easily use HubSpot forms, popups, and live chat on your WordPress site. If you’re already a HubSpot user, the plugin lets you connect your HubSpot account to your website without any code.
 
@@ -162,16 +164,22 @@ Please <a href="https://community.hubspot.com?utm_source=wordpress-plugin-listin
 
 == Changelog ==
 
-- Current version: 7.3.1
-- Current version release: 2019-04-17
+- Current version: 7.5.1
+- Current version release: 2019-05-29
 
-= 7.3.1 (2019.04.17) =
-- Fix missing assets
+= 7.5.1 (2019.05.29) =
+- Fix version flags
+- Add unit tests
+- Add languages
 
-= 7.3.0 (2019.04.17) =
-- Drop support for PHP<5.6
-- Drop support for WP<4
-- Removed hubspot from admin top bar
+= 7.5.0 (2019.05.22) =
+- Add banner to inform users if the version is outdated
+- Add notification that informs user if something is not working on our
+servers
+- Reload window when connection happens on a different tab
+- Reduce loading time for non authenticated users
+- Improve performances when navigating between pages
+- Add tests
 
 = 7.0.0 (2018.10.03) =
 - Add deeper integration with HubSpot. Starts a new release of a new forms integration within WordPress. Released progressively for some users.
