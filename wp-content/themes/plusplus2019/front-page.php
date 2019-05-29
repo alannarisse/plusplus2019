@@ -5,7 +5,7 @@
 		<div>
 		<h1>Evolve Today</h1>
 
-		<h4>With our cloud-based, flexible knowledge sharing platform evolve your organization.</h4>
+		<h4>With our cloud-based, next-generation platform for talent development evolve your organization.</h4>
 
 		<ul class="plus">
 			<li>Get your people up to speed quickly on how today's technologies work in your organization and are used by your teams.</li>
@@ -13,7 +13,7 @@
 			<li>Keep new hires and long-term employees engaged today and primed for tomorrow's challenges through a culture of continuous learning.</li>
 		</ul>
 
-		<p class="cta"><button class="button">Schedule a Demo</button></p>
+		<p><a href="/demo" class="button">Schedule a Demo</a></p>
 		</div>
 		<div><?php get_template_part('images/inline', 'bkg_pluses_lg.svg'); ?></div>
 		</section>
@@ -22,7 +22,7 @@
 			<div>
 				<h2>What  you can  do with PlusPlus</h2>
 				<h3>Scale informal face-to-face, peer-to-peer learning.</h3>
-				<p>Our platform exposes your "know who" network and expands learning and development opportunities across your organization. Anyone can discover and plan to attend informal brown bag presentations given by one of your senior or long-term employees. Learning and Development can see which topics, which teachers, and more are in demand. People teams or HR can identify employees who might be unaware of training key to their career development.</p>
+				<p>Our platform exposes your "know who" network and expands learning and development opportunities across your organization. Anyone can discover and plan to attend informal brown bag presentations given by one of your senior or long-term employees. Learning and Development can see which topics, which coaches and mentors, and more are in demand. People teams or HR can identify employees who might be unaware of training key to their career development.</p>
 				<span class="horiz-left"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?></span>
 			</div>
 			<div class="hidesm tri-right">
@@ -33,14 +33,14 @@
 			<div>
 			<h3>Close your "know how" gap.</h3>
 
-			<p>Just like no two individuals learn the same way, neither do organizations. Unlike monolithic learning management systems, our platform lets employees also choose live events where all examples and references are specific to your organization. Create a culture of coaching and intense development where employees have the opportunity to do what they do best every day. Deliver the right training to the right people at the right time.</p>
+			<p>Just like no two individuals learn the same way, neither do organizations. Unlike monolithic learning management systems, our platform lets employees also choose live events where all examples and references are specific to your organization. Create a culture of coaching and intense development where your people have the opportunity to do what they do best every day. Deliver the right training to the right people at the right time.</p>
 
 			<p class="hidesm"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?></p>
 
-			<h3>Retain your employees.</h3>
-			<p>Our platform is flexible, designed to guide organizations like yours through all states of cultural change. With add-on modules, such as <a href="#">Coaching</a>, go beyond training employees for
+			<h3>Retain your people.</h3>
+			<p>Our platform is flexible, designed to guide organizations like yours through all states of cultural change. With add-on modules, such as <a href="/products/coaching-and-mentoring">the PlusPlus Coaching and the PlusPlus Mentoring modules</a>, go beyond training your people for
 			today's work and relying on individual managers for career development. Grow and scale early
-			employees. Increase employee engagement and satisfaction by investing in your employees
+			employees. Increase engagement and satisfaction by investing in your people
 			and developing them for the work they aspire to do.</p>
 			<p><a class="button" href="/demo">schedule a demo</a></p>
 			</div>
@@ -82,6 +82,13 @@
 				<cite>Tuan Bach, Application Development Director at SSENSE</cite>
 			</div>
 			
+		</section>
+		<section class="partners">
+			<img src="/wp-content/themes/plusplus2019/images/partners/airbnb-logo.png" alt="Airbnb">
+			<img src="/wp-content/themes/plusplus2019/images/partners/chan-zuckerberg-initiative-logo.png" alt="Chan Zuckerberg Initiative">
+			<img src="/wp-content/themes/plusplus2019/images/partners/salesforce-logo.png" alt="Salesforce">
+			<img src="/wp-content/themes/plusplus2019/images/partners/shopify-logo.png" alt="shopify">
+			<img src="/wp-content/themes/plusplus2019/images/partners/ssense-logo.png" alt="Ssense">
 		</section>
 
 	</main>

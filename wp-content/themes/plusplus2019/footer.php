@@ -1,12 +1,14 @@
 	<div class="full-horiz"><?php get_template_part('images/inline', 'horiz_full.svg'); ?></div>
 
 	<footer>
-		<p class="micro">&copy; 2018 PlusPlus, Inc. </p>
+		<p class="micro">&copy; 2019 PlusPlus, Inc. </p>
 		<ul>
 			<li><a href="/docs">Documentation</a></li>
 			<li><a href="/ideas">IDEAS Magazine</a></li>
-			<!-- <li><a href="#">TechKnowCon</a></li>
-			<li><a href="#">Events</a></li> -->
+			<li><a href="/products/live-learning">Live Learning</a></li>
+			<li><a href="/products/coaching-and-mentoring">Coaching and Mentoring</a></li>
+			<li><a href="/products/platform/">Enterprise Integration</a></li>
+			<li><a href="/support-services/">Support &amp; Services</a></li>
 		</ul>
 		<ul>
 			<li><a href="/demo">Contact Us</a></li>

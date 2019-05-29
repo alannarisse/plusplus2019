@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: PlusPlus 2019
 Theme URI: https://github.com/alannarisse/plusplus2019
@@ -402,8 +403,12 @@ blockquote {
   color: #FFB500;
 }
 
-blockquote:before, blockquote:after {
-  content: open-quote;
+blockquote::before {
+  content: "“";
+}
+
+blockquote::after {
+  content: "”";
 }
 
 cite {
@@ -661,6 +666,14 @@ img.round {
   margin-left: 150px;
 }
 
+body.home section.partners {
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em;
+}
+body.home section.partners img {
+  max-height: 100px;
+}
+
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -845,8 +858,10 @@ body.home h4 {
 body.home .cta {
   text-align: center;
 }
+body.home section {
+  grid-template-columns: repeat(2, 1fr);
+}
 body.home section:nth-child(1),
-body.home section:nth-child(1) a,
 body.home nav {
   background-color: #034747;
   color: #BD84CC;
@@ -911,7 +926,7 @@ body.blog article div {
   height: auto;
 }
 
-body.blog section, body.archive section {
+body.blog section.posts-gallery, body.archive section.posts-gallery {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 8em;
 }
