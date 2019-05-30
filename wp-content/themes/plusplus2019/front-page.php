@@ -53,11 +53,11 @@
 			<div>
 				<h3>Peer Learning</h3>
 				<p>Face-to-face live learning from peers is the most effective way to transfer tribal knowledge. Tribal knowledge, or "know how," is knowledge gained from time spent at your organization within a specific context and specific roles. PlusPlus increases the personal impact of eager engineering staff at Shopify by providing tools to scale their unofficial lunch-and-learns and spontaneous training sessions.</p>
-				<p><a class="button" href="https://plusplus.co/ideas/3-steps-to-drive-adoption-of-a-new-cultural-concept/">read more</a></p>
+				<p><a class="button" href="/ideas/3-steps-to-drive-adoption-of-a-new-cultural-concept/">read more</a></p>
 
 				<h3>Whole Person Development</h3>
 				<p>At Shopify, anyone, at any level—not just executives, can sign up for coaching sessions as often as they want. Without the automation provided by the PlusPlus platform, they'd be unable to offer 1000s of coaching sessions globally per year eliminating physical location as a barrier. Delivering what's good for people, in addition to just what's profitable for their organization, gives Shopify a competitive advantage.</p>
-				<a href="https://plusplus.co/ideas/democratizing-coaching-at-shopify/" class="button">learn how</a>
+				<a href="/ideas/democratizing-coaching-at-shopify/" class="button">learn how</a>
 
 				<h3>A Culture of Learning</h3>
 				<p>Vibrant engineering cultures that attract, grow, and empower world-class talent take care and feeding. SSENSE increased employee engagement by balancing external conferences and classes with peer-to-peer learning. They ask everyone who attends conferences to host live sessions distilling what they've learned. This fosters a sense of teamwork, team spirit, and inter-team collaborations.</p>
