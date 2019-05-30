@@ -992,6 +992,9 @@ body.demo section:nth-child(2) {
 .page-id-425 hr, .page-template-page-product-template hr, .page-id-1055 hr {
   width: 100%;
 }
+.page-id-425 .wp-block-image figcaption, .page-template-page-product-template .wp-block-image figcaption, .page-id-1055 .wp-block-image figcaption {
+  color: #1BBA8A;
+}
 
 /* About Page */
 .page-id-93 {

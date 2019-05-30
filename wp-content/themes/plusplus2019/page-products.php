@@ -3,9 +3,16 @@
 	<main>
 		<section>
 		<div>
-
+			<?php 
+			if (have_posts()) {
+				while (have_posts()) {
+					the_post();
+					the_content(); 
+				}
+			} ?>
+<!-- 
 			<h1>Enterprise knowledge sharing platform</h1>
-			<h4>For your people, PlusPlus makes it easy to discover workshops, classes, tech talks, and hackathons. For the Learning & Development team, it makes it easy to manage learning at scale.</h4>
+			<h4>Your organization's fast growth depends on your people. And the PlusPlus talent development platform delivers--at scale--what they need: live learning, mentoring, and coaching.</h4> -->
 		</div>
 		<div>
 
