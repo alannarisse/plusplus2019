@@ -669,9 +669,14 @@ img.round {
 body.home section.partners {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1em;
+  max-width: 80%;
+  margin: auto;
 }
 body.home section.partners img {
   max-height: 100px;
+}
+body.home section.partners img.chan-zuck {
+  max-height: 80px;
 }
 
 footer {
@@ -1088,6 +1093,10 @@ MEDIA QUERIES
     grid-column-gap: 4em;
   }
 
+  body.single section {
+    display: block;
+  }
+
   body.blog section, body.archive section {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1107,6 +1116,10 @@ MEDIA QUERIES
   .tri-right img {
     height: 400px;
     margin-right: 0px;
+  }
+
+  body.home section.partners {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1139,6 +1152,10 @@ MEDIA QUERIES
   body.home section:nth-child(1) {
     background-image: none;
     padding-bottom: 2em;
+  }
+
+  body.home section.partners {
+    display: block;
   }
 
   body.blog section, body.archive section {
@@ -1248,7 +1265,6 @@ MEDIA QUERIES
     transform: rotate(135deg);
   }
 
-  /*-- Hamburger fun -- */
   /*-- Hamburger Fun -- */
   section h1, section p, section ul {
     width: 100%;
