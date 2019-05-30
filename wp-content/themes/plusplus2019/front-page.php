@@ -61,8 +61,8 @@
 
 				<h3>A Culture of Learning</h3>
 				<p>Vibrant engineering cultures that attract, grow, and empower world-class talent take care and feeding. SSENSE increased employee engagement by balancing external conferences and classes with peer-to-peer learning. They ask everyone who attends conferences to host live sessions distilling what they've learned. This fosters a sense of teamwork, team spirit, and inter-team collaborations.</p>
-				<a href="balancing-peer-to-peer-learning-with-external-conferences/" class="button">discover how</a>
-				<button>schedule a demo</button>
+				<a href="/ideas/balancing-peer-to-peer-learning-with-external-conferences/" class="button">discover how</a>
+				<a class="button" href="/demo">schedule a demo</a>
 			</div>
 
 			<div>
@@ -85,7 +85,7 @@
 		</section>
 		<section class="partners">
 			<img src="/wp-content/themes/plusplus2019/images/partners/airbnb-logo.png" alt="Airbnb">
-			<img src="/wp-content/themes/plusplus2019/images/partners/chan-zuckerberg-initiative-logo.png" alt="Chan Zuckerberg Initiative">
+			<img class="chan-zuck" src="/wp-content/themes/plusplus2019/images/partners/chan-zuckerberg-initiative-logo.png" alt="Chan Zuckerberg Initiative">
 			<img src="/wp-content/themes/plusplus2019/images/partners/salesforce-logo.png" alt="Salesforce">
 			<img src="/wp-content/themes/plusplus2019/images/partners/shopify-logo.png" alt="shopify">
 			<img src="/wp-content/themes/plusplus2019/images/partners/ssense-logo.png" alt="Ssense">
