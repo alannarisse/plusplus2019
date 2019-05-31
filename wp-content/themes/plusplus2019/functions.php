@@ -72,4 +72,6 @@ function documents_post_type (){
 
 add_action('init', 'documents_post_type');
 
+
+
 ?>

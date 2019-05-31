@@ -9,7 +9,7 @@
 			<li><a href="/products/coaching-and-mentoring">Coaching and Mentoring</a></li>
 			<li><a href="/products/platform/">Enterprise Integration</a></li>
 			<li><a href="/support-services/">Support &amp; Services</a></li>
-			<li><a href="/support-services/submit-an-issue/">Submit and Issue</a></li>
+			<li><a href="/support-services/submit-an-issue/">Submit an Issue</a></li>
 		</ul>
 		<ul>
 			<li><a href="/hello">Contact Us</a></li>

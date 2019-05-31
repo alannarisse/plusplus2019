@@ -26,7 +26,7 @@
 		<?php endif; ?>
 		</section>
 		<div class="mid-horiz"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?></div>
-		<section>
+		<section class="posts-gallery">
 			<?php
 				$query = new WP_Query( array( 'post__not_in' => get_option( 'sticky_posts' ) ) ); ?>
 			<?php if(have_posts()) : ?>

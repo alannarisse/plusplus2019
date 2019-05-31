@@ -1,6 +1,6 @@
 <section class="no-grid">
 	<?php 
-	$args = array('post_type' => 'docs', 'post_per_page' => 30);
+	$args = array('post_type' => 'releases', 'post_per_page' => 30);
 	$loop = new WP_Query( $args );
 
 	if($loop->have_posts()) : ?>
