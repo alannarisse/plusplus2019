@@ -1134,11 +1134,11 @@ MEDIA QUERIES
   }
 
   h1 {
-    font-size: 4.5em;
+    font-size: 4em;
   }
 
   h2 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 
   h3 {
@@ -1280,10 +1280,6 @@ MEDIA QUERIES
     background-size: auto 280px;
   }
 
-  section:nth-child(1) {
-    padding-bottom: 380px;
-  }
-
   section, footer {
     padding: 60px 40px;
     grid-template-columns: 1fr;
@@ -1302,8 +1298,8 @@ MEDIA QUERIES
   }
 }
 @media only screen and (max-width: 470px) {
-  h2 {
-    font-size: 3.5em;
+  body.home h2, h2 {
+    font-size: 2.8em;
   }
 
   section, body.ideas section {
