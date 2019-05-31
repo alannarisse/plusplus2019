@@ -1,7 +1,9 @@
 	<div class="full-horiz"><?php get_template_part('images/inline', 'horiz_full.svg'); ?></div>
 
 	<footer>
-		<p class="micro">&copy; 2019 PlusPlus, Inc. </p>
+		<p class="micro">&copy; 2019 PlusPlus, Inc.<br>
+			<a href="/privacy">Privacy Policy</a><br>
+			<a href="/terms">Terms of Service</a></p>
 		<ul>
 			<li><a href="/docs">Documentation</a></li>
 			<li><a href="/ideas">IDEAS Magazine</a></li>
