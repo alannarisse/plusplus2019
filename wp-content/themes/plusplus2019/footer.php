@@ -17,7 +17,7 @@
 			<li><a href="/hello">Contact Us</a></li>
 			<!-- <li><a href="#">YouTube</a></li> -->
 			<li><a href="https://twitter.com/PlusPlusHQ" target="_blank">Twitter</a></li>
-			<li><a href="https://www.linkedin.com/company/plusplus/" target="_blank">LinkedIn</a></li>
+			<li><a href="https://www.linkedin.com/company/plusplus.co" target="_blank">LinkedIn</a></li>
 		</ul>
 	</footer>
 	<?php wp_footer(); ?>
