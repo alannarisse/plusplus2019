@@ -953,7 +953,7 @@ body.blog section:nth-child(2), body.archive section:nth-child(2) {
 }
 
 body.blog h1 {
-  font-size: 2em;
+  font-size: 6em;
   line-height: 1.4em;
 }
 
@@ -1095,6 +1095,11 @@ MEDIA QUERIES
   }
 
   /* hide homepage plus bkg image */
+  body.blog h1 {
+    font-size: 2em;
+    line-height: 1.4em;
+  }
+
   section {
     grid-column-gap: 4em;
   }

@@ -7,7 +7,14 @@ Template Name: Docs Template
 <?php get_header(); ?>
 
 	<main>
-		<!-- <section> -->
+		<section class="no-grid">
+			<?php 
+			if (have_posts()) {
+				while (have_posts()) {
+					the_post();
+					the_content(); 
+				}
+			} ?>
 
 
 			<!-- <div>
@@ -16,9 +23,9 @@ Template Name: Docs Template
 				<button>Call to Action</button>
 			</div>
 			<div> --><?php /* get_template_part('images/inline', 'bkg-pluses_lg_grey.svg'); */ ?></div>
-		<!-- </section> -->
+		</section>
 		<section class="featured">
-			<h2>Support &amp; Services</h2>
+			<h2>Documentation</h2>
 		<?php 
 		$args = array(
         	'posts_per_page' => 2,
