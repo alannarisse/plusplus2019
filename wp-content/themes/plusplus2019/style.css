@@ -1278,6 +1278,12 @@ MEDIA QUERIES
     top: 0;
     transform: rotate(135deg);
   }
+  nav #menu-primary li.button a {
+    color: #8EEDCD;
+  }
+  nav nav .button a:hover {
+    background-color: none;
+  }
 
   /*-- Hamburger Fun -- */
   section h1, section p, section ul {
@@ -1328,6 +1334,14 @@ MEDIA QUERIES
 
   body.home section:nth-child(1) {
     background-size: 100%;
+  }
+
+  #menu-primary li.button a {
+    color: #8EEDCD;
+  }
+
+  nav .button a:hover {
+    background-color: none;
   }
 }
 
