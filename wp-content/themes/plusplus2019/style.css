@@ -1290,7 +1290,7 @@ MEDIA QUERIES
 
   section, footer {
     padding: 60px 40px;
-    grid-template-columns: 1fr;
+    display: block;
   }
 
   blockquote {
@@ -1311,7 +1311,7 @@ MEDIA QUERIES
   }
 
   section, body.ideas section {
-    grid-template-columns: 1fr;
+    display: block;
   }
 
   body.home h1 {
