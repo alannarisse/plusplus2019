@@ -51,7 +51,7 @@
 			<h2>Coaching and Mentoring</h2>
 			<p>Most knowledge transfer happens face to face. How that connection happens--whether informally or formally--influences the speed at which your organization grows. With PlusPlus, you can instill a culture of learning that puts your workforce first.</p>
 
-			<p>Experts schedule times they’re available for onboarding and training. With our [[ Mentoring module ]], they can do what they do best with fewer interruptions from newer or junior team members.</p>
+			<p>Experts schedule times they’re available for onboarding and training. With our <a href="/products/mentors">Mentoring module</a>, they can do what they do best with fewer interruptions from newer or junior team members.</p>
 
 			<p>Those seeking new skills or advice connect to the experts they need. No more need to aimlessly wander the halls in search of the right person. With our <a href="/products/coaching-programs/">Coaching module</a> they choose the skill they want assistance with and discover available coaches willing to help. Also, no more guessing when someone has time or wasting time going back and forth with calendar invites. In our <a href="/products/mentors/">Mentoring module</a>, they search by a person and choose an available time that works for them.</p>
 
