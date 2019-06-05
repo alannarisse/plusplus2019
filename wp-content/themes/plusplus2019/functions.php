@@ -72,6 +72,51 @@ function documents_post_type (){
 
 add_action('init', 'documents_post_type');
 
+/*
+========================================
+Release Custom Post Type
+========================================
+*/
+function releases_post_type (){
+	$labels = array (
+		'name' => 'Releases',
+		'singular_name' => 'Release',
+		'add_new' => 'Add Release',
+		'all_items' => 'All Releases',
+		'add_new_item' => 'Add Release',
+		'edit_item' => 'Edit Release',
+		'new_item' => 'New Release',
+		'view_item' => 'View Release',
+		'search_item' => 'Search Releases',
+		'not_found' => 'No Releases Found',
+		'not_found_in_trash' => 'No Releases Found in Trash',
+		'parent_item_colo' => 'Parent Release'
+	);
+	$args = array (
+		'labels' => $labels,
+		'public' => true,
+		'has_archive' => true,
+		'publicly_queryable' => true,
+		'query_var' => true,
+		'rewrite' => true,
+		'capability_type' => 'post',
+		'hierarchical' => true,
+		'show_in_rest' => true,
+		'supports' => array(
+			'title',
+			'editor',
+			'excerpt',
+			'thumbnail',
+			'revision',
+		),
+		'taxonomies' => array('category', 'post_tag'),
+		'menu_position' => 20,
+		'exclude_from_search' => false
+	);
+	register_post_type('releases', $args);
+}
+
+add_action('init', 'releases_post_type');
 
 
 ?>

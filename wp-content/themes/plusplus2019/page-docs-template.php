@@ -33,6 +33,8 @@ Template Name: Docs Template
 				<?php get_template_part('content'); ?>
 			</div>
 			<?php endwhile; ?>
+			<div class="nav-previous alignleft"><?php previous_posts_link( 'Older posts' ); ?></div>
+			<div class="nav-next alignright"><?php next_posts_link( 'Newer posts' ); ?></div>
 		<?php endif; ?>
 		</section>
 		<?php get_template_part('content-docs-cards'); ?>

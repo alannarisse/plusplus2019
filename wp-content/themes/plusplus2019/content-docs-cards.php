@@ -1,6 +1,10 @@
 <section class="no-grid">
 	<?php 
-	$args = array('post_type' => 'docs', 'post_per_page' => 30);
+	$args = array(
+		'post_type' => 'docs', 
+		'posts_per_page' => 50,
+		'paged' => get_query_var('page') ? get_query_var('page') : 1
+	);
 	$loop = new WP_Query( $args );
 
 	if($loop->have_posts()) : ?>
@@ -16,6 +20,10 @@
 		<?php /* endif; */ ?>
 	<?php endwhile; ?>
 			</ul>
+
+            <?php /* previous_posts_link(); */ ?>
+            <?php //next_posts_link(); ?>
+            
 	<?php else : ?>
 		<?php echo wpautop('Sorry, no posts were found'); ?>
 	<?php endif; ?>
