@@ -685,6 +685,11 @@ body.home section.partners img.chan-zuck {
   max-height: 80px;
 }
 
+body.page-child footer ul.menu {
+  margin: 0;
+  list-style-type: none;
+}
+
 footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -696,9 +701,6 @@ footer a {
 }
 footer a:hover {
   color: #05605D;
-}
-footer ul {
-  margin: 0;
 }
 footer li {
   margin: 0 0 0.4em 0;
