@@ -1169,7 +1169,8 @@ MEDIA QUERIES
   }
 
   body.home section.partners {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   body.blog section, body.archive section {
