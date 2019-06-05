@@ -3,7 +3,7 @@
 	$args = array(
 		'post_type' => 'docs', 
 		'posts_per_page' => 50,
-		'paged' => get_query_var('page') ? get_query_var('page') : 1
+		'paged' => get_query_var('paged') ? get_query_var('paged') : 1
 	);
 	$loop = new WP_Query( $args );
 
@@ -21,7 +21,7 @@
 	<?php endwhile; ?>
 			</ul>
 
-            <?php /* previous_posts_link(); */ ?>
+            <br><?php //previous_posts_link(); ?>
             <?php //next_posts_link(); ?>
             
 	<?php else : ?>

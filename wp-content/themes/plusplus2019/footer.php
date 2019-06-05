@@ -1,24 +1,34 @@
 	<div class="full-horiz"><?php get_template_part('images/inline', 'horiz_full.svg'); ?></div>
 
 	<footer>
-		<p class="micro">&copy; 2019 PlusPlus, Inc.<br>
-			<a href="/privacy">Privacy Policy</a><br>
-			<a href="/terms">Terms of Service</a></p>
-		<ul>
-			<li><a href="/docs">Documentation</a></li>
-			<li><a href="/ideas">IDEAS Magazine</a></li>
-			<li><a href="/products/live-learning">Live Learning</a></li>
-			<li><a href="/products/coaching-and-mentoring">Coaching and Mentoring</a></li>
-			<li><a href="/products/platform/">Enterprise Integration</a></li>
-			<li><a href="/support-services/">Support &amp; Services</a></li>
-			<li><a href="/support-services/submit-an-issue/">Submit an Issue</a></li>
-		</ul>
-		<ul>
-			<li><a href="/hello">Contact Us</a></li>
-			<!-- <li><a href="#">YouTube</a></li> -->
-			<li><a href="https://twitter.com/PlusPlusHQ" target="_blank">Twitter</a></li>
-			<li><a href="https://www.linkedin.com/company/plusplus.co" target="_blank">LinkedIn</a></li>
-		</ul>
+		<div class="micro">&copy; 2019 PlusPlus, Inc.<br><br>
+		<?php
+			$args = array(
+				'theme_location' => 'footer1'
+			);
+		?>
+		<?php wp_nav_menu($args); ?>
+	</div>
+			<?php
+			$args2 = array(
+				'theme_location' => 'footer2'
+			);
+		?>
+		<?php wp_nav_menu($args2); ?>
+
+			<?php
+			$args3 = array(
+				'theme_location' => 'footer3'
+			);
+		?>
+		<?php wp_nav_menu($args3); ?>
+
+			<?php
+			$args4 = array(
+				'theme_location' => 'footer4'
+			);
+		?>
+		<?php wp_nav_menu($args4); ?>
 	</footer>
 	<?php wp_footer(); ?>
 	<script

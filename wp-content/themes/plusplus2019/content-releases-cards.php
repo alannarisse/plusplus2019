@@ -20,7 +20,8 @@
 		<?php /* endif; */ ?>
 	<?php endwhile; ?>
 			</ul>
-
+			<br><?php //previous_posts_link(); ?>
+            <?php //next_posts_link(); ?>
 	<?php else : ?>
 		<?php echo wpautop('Sorry, no posts were found'); ?>
 	<?php endif; ?>

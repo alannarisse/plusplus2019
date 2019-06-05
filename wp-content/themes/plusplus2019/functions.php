@@ -5,7 +5,10 @@ function plusplus_theme_support(){
 	
 	register_nav_menus(array(
 		'primary' => __('Primary Menu'),
-		'footer'  => __('Footer Menu')
+		'footer1'  => __('Footer Menu Col 1'),
+		'footer2'  => __('Footer Menu Col 2'),
+		'footer3'  => __('Footer Menu Col 3'),
+		'footer4'  => __('Footer Menu Col 4')
 	));
 }
 
