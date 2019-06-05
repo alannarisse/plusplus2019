@@ -122,4 +122,28 @@ function releases_post_type (){
 add_action('init', 'releases_post_type');
 
 
+// Include the Google Analytics Tracking Code (ga.js)
+// @ https://developers.google.com/analytics/devguides/collection/gajs/
+function google_analytics_tracking_code(){
+
+	$propertyID = 'UA-XXXXX-X'; // GA Property ID
+
+	if ($options['ga_enable']) { ?>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74501443-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-74501443-1');
+		</script>
+
+<?php }
+}
+
+
+// include GA tracking code before the closing body tag
+add_action('wp_footer', 'google_analytics_tracking_code');
+
 ?>
