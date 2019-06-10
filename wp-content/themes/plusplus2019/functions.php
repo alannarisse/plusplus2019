@@ -126,17 +126,20 @@ add_action('init', 'releases_post_type');
 // @ https://developers.google.com/analytics/devguides/collection/gajs/
 function google_analytics_tracking_code(){
 
-	$propertyID = 'UA-XXXXX-X'; // GA Property ID
+	$propertyID = 'UA-74501443-1'; // GA Property ID
 
 	if ($options['ga_enable']) { ?>
 
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74501443-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', '<?php echo $propertyID; ?>']);
+		  _gaq.push(['_trackPageview']);
 
-		  gtag('config', 'UA-74501443-1');
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
 		</script>
 
 <?php }
