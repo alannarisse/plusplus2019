@@ -175,19 +175,39 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
   }
   // 301 Redirect from /category to /
   // Check if Drupal or WordPress is running via command line
-  if (($_SERVER['REQUEST_URI'] == '/category/ideas') && (php_sapi_name() != "cli")) {
+  if (($_SERVER['REQUEST_URI'] == '/category/ideas/*') && (php_sapi_name() != "cli")) {
+
+    // Name transaction "redirect" in New Relic for improved reporting (optional).
+    if (extension_loaded('newrelic')) {
+      newrelic_name_transaction("redirect");
+    }
+
     header('HTTP/1.0 301 Moved Permanently');
-    header('Location: https://'. $_SERVER['HTTP_HOST'] . '/ideas');
+    header('Location: https://'. $_SERVER['HTTP_HOST'] . '/ideas/*');
+
+
     exit();
   }
-  if (($_SERVER['REQUEST_URI'] == '/category/release') && (php_sapi_name() != "cli")) {
+  if (($_SERVER['REQUEST_URI'] == '/category/release/*') && (php_sapi_name() != "cli")) {
+
+    // Name transaction "redirect" in New Relic for improved reporting (optional).
+    if (extension_loaded('newrelic')) {
+      newrelic_name_transaction("redirect");
+    }
+
     header('HTTP/1.0 301 Moved Permanently');
-    header('Location: https://'. $_SERVER['HTTP_HOST'] . '/release');
+    header('Location: https://'. $_SERVER['HTTP_HOST'] . '/release/*');
     exit();
   }
-  if (($_SERVER['REQUEST_URI'] == '/category/docs') && (php_sapi_name() != "cli")) {
+  if (($_SERVER['REQUEST_URI'] == '/category/docs/*') && (php_sapi_name() != "cli")) {
+
+    // Name transaction "redirect" in New Relic for improved reporting (optional).
+    if (extension_loaded('newrelic')) {
+      newrelic_name_transaction("redirect");
+    }
+
     header('HTTP/1.0 301 Moved Permanently');
-    header('Location: https://'. $_SERVER['HTTP_HOST'] . '/docs');
+    header('Location: https://'. $_SERVER['HTTP_HOST'] . '/docs/*');
 
     exit();
   }
