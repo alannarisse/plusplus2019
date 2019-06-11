@@ -7,6 +7,6 @@
 		</div>
 		
 
-		<?php get_template_part('content-releases-cards'); ?>
+		<?php get_template_part('content-release-cards'); ?>
 	</main>
 	<?php get_footer(); ?>
