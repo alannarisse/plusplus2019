@@ -8,7 +8,7 @@
 				<!-- Aside -->
 				<aside>
 					<?php 
-					$args = array('post_type' => 'release', 'post_per_page' => 30);
+					$args = array('post_type' => 'post', 'post_per_page' => 30);
 					$loop = new WP_Query( $args );
 					
 					if($loop->have_posts()) : ?>
