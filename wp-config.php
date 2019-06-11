@@ -173,6 +173,24 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
     header('Location: https://'. $primary_domain . $_SERVER['REQUEST_URI']);
     exit();
   }
+  // 301 Redirect from /category to /
+  // Check if Drupal or WordPress is running via command line
+  if (($_SERVER['REQUEST_URI'] == '/category/ideas') && (php_sapi_name() != "cli")) {
+    header('HTTP/1.0 301 Moved Permanently');
+    header('Location: https://'. $_SERVER['HTTP_HOST'] . '/ideas');
+    exit();
+  }
+  if (($_SERVER['REQUEST_URI'] == '/category/release') && (php_sapi_name() != "cli")) {
+    header('HTTP/1.0 301 Moved Permanently');
+    header('Location: https://'. $_SERVER['HTTP_HOST'] . '/release');
+    exit();
+  }
+  if (($_SERVER['REQUEST_URI'] == '/category/docs') && (php_sapi_name() != "cli")) {
+    header('HTTP/1.0 301 Moved Permanently');
+    header('Location: https://'. $_SERVER['HTTP_HOST'] . '/docs');
+
+    exit();
+  }
 }
 /* That's all, stop editing! Happy Pressing. */
 
