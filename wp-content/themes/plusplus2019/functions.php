@@ -80,7 +80,7 @@ add_action('init', 'documents_post_type');
 Release Custom Post Type
 ========================================
 */
-function releases_post_type (){
+function release_post_type (){
 	$labels = array (
 		'name' => 'Releases',
 		'singular_name' => 'Release',
@@ -116,10 +116,10 @@ function releases_post_type (){
 		'menu_position' => 20,
 		'exclude_from_search' => false
 	);
-	register_post_type('releases', $args);
+	register_post_type('release', $args);
 }
 
-add_action('init', 'releases_post_type');
+add_action('init', 'release_post_type');
 
 
 // Include the Google Analytics Tracking Code (ga.js)
