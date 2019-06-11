@@ -1,7 +1,7 @@
 <section class="no-grid">
 	<?php 
 	$args = array(
-		'post_type' => 'releases', 
+		'post_type' => 'release', 
 		'posts_per_page' => 50,
 		'paged' => get_query_var('paged') ? get_query_var('paged') : 1
 	);
