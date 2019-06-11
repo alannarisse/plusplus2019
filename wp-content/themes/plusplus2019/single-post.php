@@ -12,7 +12,7 @@
 					$loop = new WP_Query( $args );
 					
 					if($loop->have_posts()) : ?>
-						<h4>More Documents</h4>
+						<h4>More Articles</h4>
 						<ul class="docs-aside">
 							<?php while($loop->have_posts()) : $loop->the_post(); ?>
 								<?php if (get_post_status($status->ID) !== "private") : ?>
