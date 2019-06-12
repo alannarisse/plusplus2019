@@ -747,7 +747,7 @@ span.horiz-left {
 }
 
 .horiz-right {
-  margin: 4em -230px 4em 0;
+  margin: 4em -4em 4em 0;
   align-content: end;
 }
 .horiz-right svg {
