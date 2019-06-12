@@ -385,7 +385,7 @@ section, footer {
 
 a {
   text-decoration: none;
-  color: #BD84CC;
+  color: #C879E2;
 }
 
 a:hover {
@@ -400,7 +400,7 @@ blockquote {
   /* 24px */
   line-height: 1.5em;
   margin: 2em 0 0 0;
-  color: #FFB500;
+  color: #FFC200;
 }
 
 blockquote::before {
@@ -416,7 +416,7 @@ cite {
   line-height: 1.25em;
   margin: 1em 0 0 1em;
   display: block;
-  color: #FFB500;
+  color: #FFC200;
   text-indent: -14px;
 }
 cite :before {
@@ -477,7 +477,7 @@ h5 {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 300;
-  color: #BD84CC;
+  color: #C879E2;
   margin-bottom: 1em;
 }
 
@@ -618,7 +618,7 @@ button, .button {
   font-size: 1em;
   padding: 10px 20px;
   border-radius: 8px;
-  background-color: #BD84CC;
+  background-color: #C879E2;
   border: none;
   font-weight: 600;
   color: #fff;
@@ -648,7 +648,7 @@ a.more-link {
 }
 
 a.more-link:hover {
-  color: #BD84CC;
+  color: #C879E2;
 }
 
 .more-link img {
@@ -819,7 +819,7 @@ span.horiz-left {
   font-weight: 400;
 }
 .docs-cards a.btn-read-more:hover {
-  color: #FFB500;
+  color: #FFC200;
 }
 .docs-cards .btn-read-more img {
   margin-bottom: -2px;
@@ -827,7 +827,7 @@ span.horiz-left {
 }
 
 .single-docs a {
-  color: #034747;
+  color: #05605D;
 }
 .single-docs a:hover {
   color: #1BBA8A;
@@ -848,7 +848,7 @@ span.horiz-left {
 /* //Documents */
 /* COLOR STYLES BY PAGE */
 body.home nav a {
-  color: #BD84CC;
+  color: #C879E2;
 }
 body.home nav a:hover {
   color: #1BBA8A;
@@ -880,8 +880,8 @@ body.home section {
 }
 body.home section:nth-child(1),
 body.home nav {
-  background-color: #034747;
-  color: #BD84CC;
+  background-color: #05605D;
+  color: #C879E2;
 }
 body.home section:nth-child(1) {
   background-image: url("images/bkg_table_lav.png");
@@ -890,7 +890,7 @@ body.home section:nth-child(1) {
   background-position: bottom right;
 }
 body.home section:nth-child(3) {
-  background-color: #75223D;
+  background-color: #89274A;
   color: #fff;
   background-image: url("images/bkg_table_wht.png");
   background-repeat: no-repeat;
@@ -975,23 +975,23 @@ body.demo section:nth-child(2) {
 /* //IDEAS */
 /* Support & Services */
 .page-id-895, .page-template-page-docs-template, .single-docs, .post-type-archive-docs {
-  background-color: #FFB500;
+  background-color: #FFC200;
 }
 .page-id-895 button:hover, .page-id-895 .button:hover, .page-id-895 .button a:hover, .page-template-page-docs-template button:hover, .page-template-page-docs-template .button:hover, .page-template-page-docs-template .button a:hover, .single-docs button:hover, .single-docs .button:hover, .single-docs .button a:hover, .post-type-archive-docs button:hover, .post-type-archive-docs .button:hover, .post-type-archive-docs .button a:hover {
-  background-color: #BD84CC;
+  background-color: #C879E2;
   /* teal */
 }
 .page-id-895 button, .page-id-895 .button, .page-template-page-docs-template button, .page-template-page-docs-template .button, .single-docs button, .single-docs .button, .post-type-archive-docs button, .post-type-archive-docs .button {
   background-color: #1BBA8A;
 }
 .page-id-895 aside a, .page-template-page-docs-template aside a, .single-docs aside a, .post-type-archive-docs aside a {
-  color: #034747;
+  color: #05605D;
 }
 
 /* Docs */
 /* Product */
 .page-id-425, .page-template-page-product-template, .page-id-1055 {
-  background-color: #75223D;
+  background-color: #89274A;
   color: #8EEDCD;
 }
 .page-id-425 section, .page-template-page-product-template section, .page-id-1055 section {
@@ -1007,7 +1007,7 @@ body.demo section:nth-child(2) {
   background-color: #1BBA8A;
 }
 .page-id-425 button:hover, .page-id-425 a.button:hover, .page-template-page-product-template button:hover, .page-template-page-product-template a.button:hover, .page-id-1055 button:hover, .page-id-1055 a.button:hover {
-  background-color: #BD84CC;
+  background-color: #C879E2;
 }
 .page-id-425 hr, .page-template-page-product-template hr, .page-id-1055 hr {
   width: 100%;
@@ -1018,7 +1018,7 @@ body.demo section:nth-child(2) {
 
 /* About Page */
 .page-id-93 {
-  background-color: #034747;
+  background-color: #05605D;
   color: #fff;
 }
 .page-id-93 footer a, .page-id-93 nav a {
@@ -1061,7 +1061,7 @@ MEDIA QUERIES
     text-transform: uppercase;
     font-size: 1em;
     font-weight: 300;
-    color: #BD84CC;
+    color: #C879E2;
     margin-bottom: 1em;
   }
 
@@ -1229,7 +1229,7 @@ MEDIA QUERIES
     /*display: block;*/
     visibility: visible;
     opacity: 1;
-    background-color: #75223D;
+    background-color: #89274A;
     padding: 20px;
     width: 100%;
     height: 120vh;
