@@ -9,7 +9,7 @@
 				<h4>Were you looking for...</h4>
 				<ul>
 					<li><a href="/docs">Documentation?</a></li>
-					<li><a href="/ideas">IDEAS Magaxzine?</a></li>
+					<li><a href="/ideas">IDEAS Magazine?</a></li>
 					<li><a href="/demo">Scheduling a Demo?</a></li>
 					<li><a href="/hello">Our contact info?</a></li>
 				</ul>
