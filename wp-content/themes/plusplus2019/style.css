@@ -429,8 +429,8 @@ figcaption {
 
 section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 8em;
+  grid-template-columns: 70% 30%
+  grid-column-gap: 4em;
 }
 
 .logo {
@@ -535,7 +535,7 @@ ul.plus {
   line-height: 1.6em;
 }
 
-/*.plus li { 
+/*.plus li {
 	margin:0 0 2em 1.4em;
 	line-height: 1.4em;
 	color: #fff;
