@@ -718,7 +718,7 @@ footer li {
 
 .full-horiz {
   margin: 40px 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .blurb {
