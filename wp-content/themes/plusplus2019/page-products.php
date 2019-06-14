@@ -10,9 +10,6 @@
 					the_content();
 				}
 			} ?>
-<!--
-			<h1>Enterprise knowledge sharing platform</h1>
-			<h4>Your organization's fast growth depends on your people. And the PlusPlus talent development platform delivers--at scale--what they need: live learning, mentoring, and coaching.</h4> -->
 		</div>
 		<div>
 
@@ -22,10 +19,32 @@
 
 
 		<div class="horiz-left"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?>
-			<p>
 		</div><div>&nbsp;</div>
+		</section>
 
-		<!-- live-learning -->
+		<!-- ACF for Products -->
+		<?php if( have_rows('product_repeater') ): ?>
+	 
+	    <?php while( have_rows('product_repeater') ): the_row(); ?>
+	 	<section class="prod_repeater">
+	        <div class="prod_img">
+	        	<img src="<?php the_sub_field('product_image'); ?>"/>
+	        </div>
+
+	        <div>
+	        	<?php the_sub_field('product_content'); ?>
+	        </div>
+	        <div class="horiz-left"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?>
+			</div>
+			<div>&nbsp;</div>
+		</section>
+	    <?php endwhile; ?>
+	<?php endif; ?>
+	<!-- /ACF for products -->
+
+		
+		<!-- live-learning 
+		<section>
 		<div>
 			<img src="/wp-content/themes/plusplus2019/images/products/live-learning.png" style="width:100%;">
 		</div>
@@ -40,10 +59,10 @@
 			<a href="/products/live-learning" class="button">Learn More</a>
 
 		</div>
-		<!-- // live-learning -->
+		 // live-learning -->
 
 
-		<!-- Coaching  Mentoring -->
+		<!-- Coaching  Mentoring 
 		<div>&nbsp;</div>
 		<div class="horiz-right"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?>
 		</div>
@@ -60,9 +79,9 @@
 		<div>
 			<img src="/wp-content/themes/plusplus2019/images/products/Coaching-index.png" style="width: 100%;">
 		</div>
-		<!-- // Coaching  Mentoring -->
+		 // Coaching  Mentoring -->
 
-
+		<!-- 
 		<div class="horiz-left"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?>
 		</div>
 		<div>&nbsp;</div>
@@ -80,7 +99,7 @@
 			</p>
 			<a href="/products/platform" class="button">Learn More</a>
 
-		</div>
+		</div> -->
 
 
 

@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 	<main>
-		
 		<div class="top-horiz">
 			<div>
 				<h2>IDEAS Magazine</h2>
