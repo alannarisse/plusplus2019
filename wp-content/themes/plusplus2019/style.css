@@ -1006,9 +1006,12 @@ body.demo section:nth-child(2) {
 }
 .page-id-425 section { grid-template-columns: 1fr 1fr; }
 
-.page-id-425 section.prod_repeater:nth-child(even) { direction: rtl; }
+.page-id-425 section.prod_repeater:nth-child(odd) { 
+  direction: rtl; 
+  text-align: left; 
+}
 
-.page-id-425 section.prod_repeater:last-child div.horiz-left  svg { height: 0; overflow:hidden;}
+.page-id-425 section:last-of-type .horiz-left { height: 0; overflow: hidden; }
 
 .prod_img img { width: 100%; }
 

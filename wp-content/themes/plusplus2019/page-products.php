@@ -43,7 +43,7 @@
 	<!-- /ACF for products -->
 
 		
-		<!-- live-learning 
+		<!-- live-learning -->
 		<section>
 		<div>
 			<img src="/wp-content/themes/plusplus2019/images/products/live-learning.png" style="width:100%;">
@@ -59,10 +59,10 @@
 			<a href="/products/live-learning" class="button">Learn More</a>
 
 		</div>
-		 // live-learning -->
+		 <!-- // live-learning -->
 
 
-		<!-- Coaching  Mentoring 
+		<!-- Coaching  Mentoring -->
 		<div>&nbsp;</div>
 		<div class="horiz-right"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?>
 		</div>
@@ -79,9 +79,8 @@
 		<div>
 			<img src="/wp-content/themes/plusplus2019/images/products/Coaching-index.png" style="width: 100%;">
 		</div>
-		 // Coaching  Mentoring -->
+		 <!-- // Coaching  Mentoring -->
 
-		<!-- 
 		<div class="horiz-left"><?php get_template_part('images/inline', 'bkg_horiz.svg'); ?>
 		</div>
 		<div>&nbsp;</div>
@@ -99,7 +98,7 @@
 			</p>
 			<a href="/products/platform" class="button">Learn More</a>
 
-		</div> -->
+		</div>
 
 
 
