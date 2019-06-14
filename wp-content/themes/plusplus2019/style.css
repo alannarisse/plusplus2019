@@ -996,7 +996,7 @@ body.demo section:nth-child(2) {
 }
 
 /* Docs */
-/* Product */
+/* Product (class page-id-425 in body tag) */
 .page-id-425, .page-template-page-product-template, .page-id-1055 {
   background-color: #89274A;
   color: #8EEDCD;
@@ -1011,9 +1011,10 @@ body.demo section:nth-child(2) {
   text-align: left; 
 }
 
+/* hides the last left horizontal line on the sections in products page so there aren't duplicate horizontal lines at the bottom. */ 
 .page-id-425 section:last-of-type .horiz-left { height: 0; overflow: hidden; }
 
-.prod_img img { width: 100%; }
+.page-id-425 .prod_img img { width: 100%; }
 
 .page-id-425 footer a, .page-id-425 nav a, .page-template-page-product-template footer a, .page-template-page-product-template nav a, .page-id-1055 footer a, .page-id-1055 nav a {
   color: #8EEDCD;
@@ -1202,7 +1203,8 @@ MEDIA QUERIES
     margin-left: 0;
     padding: 0 40px;
   }
-
+  .page-id-425 .prod_img { margin-bottom: 20px; }
+  .page-id-425 section.prod_repeater { padding: 0 40px; }
   .top-horiz {
     margin-left: 0;
   }
